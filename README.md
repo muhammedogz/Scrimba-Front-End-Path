@@ -20,5 +20,5 @@ This is why I start with Module 3.
 
 This module teaches JavaScript basics.
 
-- BlackJack Game - [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/BlackJack/index.html)
+- Blackjack Game - [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Blackjack/index.html)
   
