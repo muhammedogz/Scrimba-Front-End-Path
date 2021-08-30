@@ -15,8 +15,6 @@ body {
 	margin: 0;
 
 	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .container {
@@ -29,7 +27,35 @@ body {
 	padding: 3em;
 
 	color: #fff;
-	background-color: rgba(27, 34, 26, 0.711);
+	background-color: rgba(27, 34, 26, 0.911);
 	background-image: url(../images/grass.jpg);
 	background-blend-mode: luminosity;
+
+	border-radius: 2em;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+
+	margin-block: 1em;
+	padding: 0.7em 1.7em;
+	width: 100%;
+
+	color: #000;
+	background: none;
+	background-color: hsla(151, 50%, 70%);
+
+	border-radius: 0.3em;
+
+	transform: scale(1);
+	transition: transform 250ms;
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+
+.darker-green {
+	background-color: hsla(151, 30%, 70%);
 }
