@@ -3,10 +3,17 @@
 }
 
 body {
-	min-height: 100vh;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
 		sans-serif;
+
+	background-image: url(../images/bg-black.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	min-height: 100vh;
 	margin: 0;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -14,15 +21,15 @@ body {
 
 .container {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
 	margin: auto;
 	padding: 3em;
 
 	color: #fff;
-	background-color: rgb(22, 172, 159);
+	background-color: rgba(27, 34, 26, 0.711);
 	background-image: url(../images/grass.jpg);
-	background-blend-mode: multiply;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	background-blend-mode: luminosity;
 }
