@@ -5,6 +5,9 @@
 body {
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
 		sans-serif;
+	/* color: #35b5ac;
+	color: #8d8f8a;
+	color: #85a7a0; */
 
 	background-image: url(../images/bg-black.jpg);
 	background-size: cover;
@@ -23,12 +26,14 @@ body {
 	align-items: center;
 	flex-direction: column;
 
+	width: 50%;
+
 	margin: auto;
 	padding: 3em;
 
 	color: #fff;
 	background-color: rgba(27, 34, 26, 0.911);
-	background-image: url(../images/grass.jpg);
+
 	background-blend-mode: luminosity;
 
 	border-radius: 2em;
@@ -40,11 +45,11 @@ button {
 
 	margin-block: 1em;
 	padding: 0.7em 1.7em;
-	width: 100%;
+	width: 80%;
 
-	color: #000;
+	color: rgb(36, 43, 102);
 	background: none;
-	background-color: hsla(151, 50%, 70%);
+	background-color: rgb(107, 182, 146);
 
 	border-radius: 0.3em;
 
@@ -57,5 +62,5 @@ button:hover {
 }
 
 .darker-green {
-	background-color: hsla(151, 30%, 70%);
+	background-color: hsl(151, 34%, 37%);
 }
