@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial,
+		sans-serif;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+
+	margin: auto;
+	padding: 3em;
+
+	color: #fff;
+	background-color: rgb(22, 172, 159);
+	background-image: url(../images/grass.jpg);
+	background-blend-mode: multiply;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
