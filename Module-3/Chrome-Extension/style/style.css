@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+}
+
+div {
+	margin: 1em auto;
+}
+
+input {
+	width: 100%;
+
+	padding: 0.4em 0.7em;
+	margin: 0.5em 0;
+
+	border: 1px solid #5f9341;
+}
+
+button {
+	background-color: #5f9341;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 0.6em 1em;
+}
+
+button:hover {
+	background-color: #5f93417c;
+}
