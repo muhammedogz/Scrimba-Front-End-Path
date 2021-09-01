@@ -2,15 +2,23 @@ let num1 = generateRandom();
 let num2 = generateRandom();
 let cards = [num1, num2];
 
-let messageEl = document.getElementById("message-el");
-let cardsEl = document.getElementById("cards-el");
-let sumEl = document.getElementById("sum-el");
+const messageEl = document.getElementById("message-el");
+const cardsEl = document.getElementById("cards-el");
+const sumEl = document.getElementById("sum-el");
+
+let isFinished = "";
 
 function startGame () {
     renderGame();
 }
 
 function renderGame() {
+    if (isFinished.length != 0)
+    {
+        messageEl.textContent = isFinished;
+        return;
+    }
+
     let sum = 0;
 
     let newCardsContent = "Cards: ";
@@ -29,10 +37,12 @@ function renderGame() {
     else if (sum == 21) 
     {
         messageEl.textContent = "It's Blackjack!";
+        isFinished = "It's Blackjack! You should not play a new card.";
     }
     else
     {
         messageEl.textContent = "You lose.";
+        isFinished = "You lose. Game is Over. Refresh for play again.";
     }
     
 }
