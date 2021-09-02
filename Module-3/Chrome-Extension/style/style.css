@@ -32,3 +32,18 @@ button {
 button:hover {
 	background-color: #5f93417c;
 }
+
+ul {
+	list-style: none;
+	margin: 1em 0;
+	padding: 0;
+	color: #5f9341;
+}
+
+ul li {
+	margin: 0.5em 0;
+}
+
+ul a {
+	color: inherit;
+}
