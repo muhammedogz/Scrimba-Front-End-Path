@@ -18,8 +18,13 @@ function renderUl() {
     let content = "";
     for (let i = 0; i < info.length; i++)
     {
-        content += "<li>" + info[i] + "</li>";
+        content += `
+            <li>
+                <a href="${info[i]}" target="_blank">${info[i]}</a>
+            </li>
+        `;
     }
+    console.log(content);
     ulEl.innerHTML = content;
     //! alternative 
     // const li = document.createElement("li");
