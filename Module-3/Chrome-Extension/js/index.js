@@ -4,13 +4,24 @@ const ulEl = document.getElementById("ul-el");
 
 let info = [];
 
+// if there is a previous data
+// store in info and render it
+const localCheck = JSON.parse(localStorage.getItem("lead"));
+if (localCheck !== null)
+{
+    info = localCheck; 
+    renderUl();
+}
+
+
 buttonEl.addEventListener("click", function() {
     const value = inputEl.value;
     if (value.length === 0)
         return;
-
+    
     info.push(value);
     inputEl.value = "";
+    localStorage.setItem("lead",JSON.stringify(info));
     renderUl();
 });
 
