@@ -4,19 +4,25 @@ const ulEl = document.getElementById("ul-el");
 
 let info = [];
 
-buttonEl.addEventListener("click", () => {
+buttonEl.addEventListener("click", function() {
     const value = inputEl.value;
     if (value.length === 0)
         return;
 
     info.push(value);
-    ulEl.innerHTML += "<li>" + value + "</li>";
     inputEl.value = "";
+    renderUl();
 });
 
 function renderUl() {
+    let content = "";
     for (let i = 0; i < info.length; i++)
     {
-        ulEl.innerHTML += "<li>" + info[i] + "</li>";
+        content += "<li>" + info[i] + "</li>";
     }
+    ulEl.innerHTML = content;
+    //! alternative 
+    // const li = document.createElement("li");
+    // li.textContent = value;
+    // ulEl.append(li);
 }
