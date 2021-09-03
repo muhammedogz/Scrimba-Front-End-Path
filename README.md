@@ -20,5 +20,12 @@ This is why I start with Module 3.
 
 This module teaches JavaScript basics.
 
-- Blackjack Game - [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Blackjack/index.html)
-  
+- Blackjack Game -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Blackjack/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-3/Blackjack) \
+    A basic Blackjack game.
+
+- Chrome Extension -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Chrome-Extension/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-3/Chrome-Extension/) \
+    An extension for HR. Not has fully functionality in browser. Should be in active extensions.
