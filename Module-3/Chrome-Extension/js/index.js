@@ -45,5 +45,7 @@ function renderUl() {
 }
 
 deleteEl.addEventListener("click", function() {
-    
+    info = [];
+    localStorage.setItem("lead",JSON.stringify(info));
+    renderUl();
 });
