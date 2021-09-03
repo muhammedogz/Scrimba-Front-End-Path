@@ -1,4 +1,5 @@
 const saveEl = document.getElementById("save-el");
+const tabEl = document.getElementById("btn-tab");
 const deleteEl = document.getElementById('delete-el');
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
@@ -43,6 +44,16 @@ function renderUl() {
     // li.textContent = value;
     // ulEl.append(li);
 }
+
+tabEl.addEventListener("click", function() {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        info.push(tabs[0].url);
+        localStorage.setItem("lead",JSON.stringify(info));
+        renderUl();
+    });
+
+
+});
 
 deleteEl.addEventListener("dblclick", function() {
     info = [];
