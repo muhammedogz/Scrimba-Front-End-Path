@@ -43,13 +43,13 @@ button {
 	text-transform: uppercase;
 }
 
+button:hover {
+	background-color: #5f934180;
+}
+
 .btn-delete {
 	background-color: white;
 	color: #5f9341;
-}
-
-button:hover {
-	background-color: #5f93417c;
 }
 
 ul {
