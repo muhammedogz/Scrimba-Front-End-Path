@@ -1,4 +1,5 @@
 const saveEl = document.getElementById("save-el");
+const deleteEl = document.getElementById('delete-el');
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
 
@@ -42,3 +43,7 @@ function renderUl() {
     // li.textContent = value;
     // ulEl.append(li);
 }
+
+deleteEl.addEventListener("click", function() {
+    
+});
