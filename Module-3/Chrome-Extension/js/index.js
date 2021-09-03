@@ -7,7 +7,7 @@ let info = [];
 // if there is a previous data
 // store in info and render it
 const localCheck = JSON.parse(localStorage.getItem("lead"));
-if (localCheck !== null)
+if (localCheck)
 {
     info = localCheck; 
     renderUl();
