@@ -39,6 +39,8 @@ button {
 	padding: 0.6em 1em;
 	margin-inline: 0.3em;
 	border: 1px solid #5f9341;
+
+	text-transform: uppercase;
 }
 
 .btn-delete {
