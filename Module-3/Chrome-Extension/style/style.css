@@ -9,7 +9,8 @@ body {
 	min-width: 380px;
 }
 
-div {
+.wrapper {
+	width: 70%;
 	align-self: flex-start;
 	margin: 1em;
 }
@@ -23,12 +24,26 @@ input {
 	border: 1px solid #5f9341;
 }
 
+.buttons {
+	width: 80%;
+	display: flex;
+}
+
 button {
 	background-color: #5f9341;
+	display: inline-block;
+	width: 100%;
 	color: white;
 	border: none;
 	cursor: pointer;
 	padding: 0.6em 1em;
+	margin-inline: 0.3em;
+	border: 1px solid #5f9341;
+}
+
+.btn-delete {
+	background-color: white;
+	color: #5f9341;
 }
 
 button:hover {

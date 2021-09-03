@@ -1,4 +1,4 @@
-const buttonEl = document.getElementById("button-el");
+const saveEl = document.getElementById("save-el");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
 
@@ -14,7 +14,7 @@ if (localCheck)
 }
 
 
-buttonEl.addEventListener("click", function() {
+saveEl.addEventListener("click", function() {
     const value = inputEl.value;
     if (value.length === 0)
         return;
