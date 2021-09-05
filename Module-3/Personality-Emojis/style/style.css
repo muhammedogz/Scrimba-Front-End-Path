@@ -3,5 +3,17 @@
 }
 
 body {
-	margin: 0;
+	font-family: Baloo;
+	height: 100vh;
+	overflow-y: hidden;
+	background-image: linear-gradient(#5da4d9, #fff);
+	color: #fff;
+}
+
+.emojis {
+	text-align: center;
+}
+
+.emojis span {
+	font-size: 4rem;
 }
