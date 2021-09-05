@@ -1,8 +1,12 @@
 const emojisEl = document.getElementById("emojis-el");
-const input = document.getElementById("emoji-input");
-const saveEnd = document.getElementById("save-btn-end");
 
-// "💘", "😢", "💪"
+const input = document.getElementById("emoji-input");
+
+const saveEnd = document.getElementById("save-btn-end");
+const saveFirst = document.getElementById("save-btn-first");
+const deleteEnd = document.getElementById("delete-btn-end");
+const deleteFirst = document.getElementById("delete-btn-first");
+
 
 let emojis = [];
 
@@ -12,6 +16,32 @@ saveEnd.addEventListener("click", function() {
     {
         emojis.push(value);
         input.value = "";
+        render();
+    }
+});
+
+saveFirst.addEventListener("click", function() {
+    const value = input.value;
+    if (value)
+    {
+        emojis.unshift(value);
+        input.value = "";
+        render();
+    }
+});
+
+deleteEnd.addEventListener("click", function()  {
+    if (emojis.length > 0)
+    {
+        emojis.pop();
+        render();
+    }
+});
+
+deleteFirst.addEventListener("click", function() {
+    if (emojis.length > 0)
+    {
+        emojis.shift();
         render();
     }
 });
