@@ -16,9 +16,11 @@ I finished HTML and CSS modules deeply in this repo. You can check it there. \
 
 This is why I start with Module 3.
 
+----
+
 ### Module 3 - Making Websites Interactive
 
-This module teaches JavaScript basics.
+This module teach JavaScript basics.
 
 - Blackjack Game -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Blackjack/index.html) -
@@ -34,3 +36,19 @@ This module teaches JavaScript basics.
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Personality-Emojis/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-3/Personality-Emojis) \
     An array training. Add remove elements into end or begin.
+
+----
+
+### Module 4 - CSS & JavaScript fundamentals
+
+- Practice Time ->
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/CSS-Fundamentals/Practice-Time/) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Practice-Time)
+- Compound Practice ->
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/CSS-Fundamentals/Compound-Practice/) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Compound-Practice)
+- Putting It All Together ->
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/CSS-Fundamentals/Putting-It-All-Together) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Putting-It-All-Together) \
+  This three example taken from my other repo that I completed Responsive Design Course.
+  
