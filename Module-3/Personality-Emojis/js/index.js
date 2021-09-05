@@ -2,13 +2,16 @@ const emojisEl = document.getElementById("emojis-el");
 const input = document.getElementById("emoji-input");
 const saveEnd = document.getElementById("save-btn-end");
 
-let emojis = ["💘", "😢", "💪"];
+// "💘", "😢", "💪"
+
+let emojis = [];
 
 saveEnd.addEventListener("click", function() {
     const value = input.value;
     if (value)
     {
         emojis.push(value);
+        input.value = "";
         render();
     }
 });
