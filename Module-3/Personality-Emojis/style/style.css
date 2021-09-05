@@ -21,3 +21,33 @@ h1 {
 .emojis span {
 	font-size: 4rem;
 }
+
+.input-container {
+	display: flex;
+	margin-block: 2em;
+}
+
+.input-container div {
+	margin: 0 auto;
+}
+
+.emoji-input {
+	padding: 1.5em 2em;
+	width: 50vw;
+	max-width: 600px;
+	border: 2px solid #5da4d9;
+	font-family: inherit;
+}
+
+.save-btn {
+	padding: 1.5em 2.2em;
+	font-family: inherit;
+	border: 2px solid #5da4d9;
+	background-color: #5da4d9;
+	cursor: pointer;
+	color: #fff;
+}
+
+.save-btn:hover {
+	background-color: #5da3d979;
+}
