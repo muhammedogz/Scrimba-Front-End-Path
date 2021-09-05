@@ -10,6 +10,10 @@ body {
 	color: #fff;
 }
 
+h1 {
+	text-align: center;
+}
+
 .emojis {
 	text-align: center;
 }
