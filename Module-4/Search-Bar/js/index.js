@@ -1,6 +1,20 @@
-const inputEl = document.getElementById("text-input");
+const results = document.getElementById("results");
+const items = document.getElementsByClassName("name");
 
-inputEl.addEventListener("keyup", function(event) {
-    const val = event.target.value.toLowerCase();
-    console.log(val);
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function(event) {
+    const value = event.target.value.toLowerCase();
+
+    for (let i = 0; i < items.length; i++)
+    {
+        if (!items[i].textContent.toLowerCase().includes(value))
+        {  
+            items[i].style.display = "none";
+        }
+        else
+        {
+            items[i].style.display = "block";
+        }
+    }
 });
