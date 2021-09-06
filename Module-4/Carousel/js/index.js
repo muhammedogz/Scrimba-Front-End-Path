@@ -6,10 +6,11 @@ const rightBtn = document.getElementById("right");
 // body.style.background = "url(\"images/icon.png\")";
 
 let imageCount = 1;
+const maxImageCount = 5;
 
 rightBtn.addEventListener("click", function() {
     imageCount++;
-    if (imageCount > 10)
+    if (imageCount > maxImageCount)
         imageCount = 1;
 
     renderImage();
@@ -18,7 +19,7 @@ rightBtn.addEventListener("click", function() {
 leftBtn.addEventListener("click", function() {
     imageCount--;
     if (imageCount < 1)
-        imageCount = 10;
+        imageCount = maxImageCount;
     
     renderImage();
 });
