@@ -14,6 +14,61 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-color: rgba(0, 0, 0, 0.212);
+	background-color: rgba(0, 0, 0, 0.712);
 	background-blend-mode: multiply;
+}
+
+img {
+	width: 100%;
+	margin: auto;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.card {
+	position: relative;
+	margin: auto;
+	width: 90%;
+	display: flex;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	border-radius: 30em;
+}
+
+@media (min-width: 760px) {
+	.card {
+		width: 45%;
+	}
+}
+
+button {
+	background-color: rgba(100, 26, 26, 0.4);
+	padding-top: 4px;
+	padding: 1em 1em 1em 1em;
+	position: absolute;
+	border: 2px solid black;
+	border-radius: 5em;
+
+	cursor: pointer;
+}
+
+#left {
+	top: 50%;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#right {
+	top: 50%;
+	right: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.display-image {
+	border: 1px solid black;
 }
