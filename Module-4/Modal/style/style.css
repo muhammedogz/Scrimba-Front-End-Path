@@ -33,7 +33,7 @@ button:focus {
 .overlay {
 	background-color: rgba(172, 158, 39, 0.281);
 	padding: 2em;
-	max-width: 680px;
+	display: none;
 }
 
 #overlay {
@@ -50,4 +50,6 @@ button:focus {
 	border-radius: 0.7em;
 	padding: 1em;
 	top: 30%;
+	max-width: 700px;
+	margin: auto;
 }
