@@ -6,7 +6,7 @@ const rightBtn = document.getElementById("right");
 // body.style.background = "url(\"images/icon.png\")";
 
 let imageCount = 1;
-const maxImageCount = 5;
+const maxImageCount = 2;
 
 rightBtn.addEventListener("click", function() {
     imageCount++;
