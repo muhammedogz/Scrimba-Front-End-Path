@@ -5,10 +5,26 @@ const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
 // body.style.background = "url(\"images/icon.png\")";
 
-console.log(body.style.backgroundImage);
+let imageCount = 1;
 
 rightBtn.addEventListener("click", function() {
-    body.style.backgroundImage = "url(\"images/left-arrow.png\")";
-    image.src = "images/left-arrow.png";
-    console.log(image);
+    imageCount++;
+    if (imageCount > 10)
+        imageCount = 1;
+
+    renderImage();
 });
+
+leftBtn.addEventListener("click", function() {
+    imageCount--;
+    if (imageCount < 1)
+        imageCount = 10;
+    
+    renderImage();
+});
+
+function renderImage() {
+    const nextImage = `images/card-images/image-${imageCount}.png`;
+    body.style.backgroundImage = `url("${nextImage}")`;
+    image.src = nextImage;
+}
