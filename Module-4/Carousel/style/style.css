@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100vh;
+}
+
+body {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+	background-image: url("../images/icon.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.212);
+	background-blend-mode: multiply;
+}
