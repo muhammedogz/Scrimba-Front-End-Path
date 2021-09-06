@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+
+.container {
+	width: 90%;
+	max-width: 700px;
+	margin: auto;
+}
+
+#search,
+#results {
+	text-align: center;
+}
+
+#search {
+	margin-top: 1em;
+	background-color: rgb(226, 197, 123);
+	padding: 1em;
+
+	border-bottom: 2px solid black;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+#searchInput {
+	margin-top: 0.4em;
+	padding: 0.3em;
+	border-radius: 0.5em;
+	width: 100%;
+}
+
+#results {
+	background-color: rgba(58, 184, 184, 0.788);
+	padding: 1em;
+	margin: 0;
+	list-style: none;
+	color: white;
+
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+#results li {
+	background-color: rgba(84, 202, 84, 0.808);
+	margin-block: 1em;
+	padding: 1em;
+
+	border: 1px solid gray;
+	border-radius: 1em;
+}
