@@ -54,6 +54,9 @@ button {
 	border-radius: 5em;
 
 	cursor: pointer;
+
+	/* vertical align */
+	transform: translateY(-50%);
 }
 
 #left {
