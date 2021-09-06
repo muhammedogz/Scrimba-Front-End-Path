@@ -59,3 +59,6 @@ JavaScript Challenges Part
 - Modal -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-4/Modal/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-4/Modal)
+- Search Bar -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-4/Search-Bar/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-4/Search-Bar)
