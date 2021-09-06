@@ -41,6 +41,9 @@ This module teach JavaScript basics.
 
 ### Module 4 - CSS & JavaScript fundamentals
 
+CSS Challenges Part\
+This three example taken from my other repo that I completed Responsive Design Course.
+
 - Practice Time ->
   [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/CSS-Fundamentals/Practice-Time/) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Practice-Time)
@@ -49,6 +52,10 @@ This module teach JavaScript basics.
   [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Compound-Practice)
 - Putting It All Together ->
   [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/CSS-Fundamentals/Putting-It-All-Together) -
-  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Putting-It-All-Together) \
-  This three example taken from my other repo that I completed Responsive Design Course.
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Putting-It-All-Together)
   
+JavaScript Challenges Part
+
+- Modal -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-4/Modal/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-4/Modal)
