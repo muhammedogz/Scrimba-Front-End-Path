@@ -65,3 +65,6 @@ JavaScript Challenges Part
 - Carousel -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-4/Carousel/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-4/Carousel)
+- Dice Game -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-4/Dice-Game/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-4/Dice-Game)
