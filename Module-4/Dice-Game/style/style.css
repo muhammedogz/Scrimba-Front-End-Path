@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1rem;
+
+	background-color: #d68875;
+	background-image: url(../images/bg-dice.jpg);
+	background-size: contain;
+	background-repeat: round;
+	background-blend-mode: multiply;
+	color: #fff;
+
+	min-height: 100vh;
+	display: flex;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+/* typography */
+
+.container {
+	font-size: clamp(1rem, 1rem + 2vw, 3rem);
+}
+
+h1 {
+	font-size: 1.3em;
+}
+
+p {
+	font-size: 1.15em;
+}
+
+p {
+	font-weight: bold;
+}
+
+/* layout */
+
+.container {
+	position: relative;
+
+	margin: auto;
+
+	text-align: center;
+
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	border-radius: 5em;
+}
+
+.container > h1 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: 0.5em;
+
+	background: -webkit-linear-gradient(#f98364, rgb(56, 99, 192));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.game {
+	display: flex;
+}
+
+.card {
+	background-color: rgba(0, 0, 0, 0.253);
+	padding-inline: clamp(2em, 1em + 8vw, 5em);
+	padding-top: 4rem;
+	padding-bottom: 1em;
+}
+
+.player-1 {
+	background-color: #f98364;
+
+	border-right: 1px solid #fff;
+	border-top-left-radius: 2em;
+	border-bottom-left-radius: 2em;
+}
+
+.player-2 {
+	background-color: #eed5cf;
+	color: #000;
+
+	border-top-right-radius: 2em;
+	border-bottom-right-radius: 2em;
+}
+
+.card > p {
+	margin-block: clamp(1.8em, 1em + 4vw, 3em);
+}
+
+.dice-container {
+	background-color: #fa8b83;
+
+	padding: 0.5em 1.6em;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid #fff;
+	border-radius: 2em;
+
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.player-2 .dice-container {
+	border-color: #000;
+}
+
+.dice {
+	margin: 0;
+	font-size: 2.5em;
+}
+
+.rol-dice {
+	position: absolute;
+	bottom: 4%;
+	left: 51%;
+	transform: translateX(-50%);
+
+	color: inherit;
+
+	padding: 0.3em 0.2em;
+
+	background: rgb(183, 42, 8);
+	background: linear-gradient(
+		97deg,
+		rgba(183, 42, 8, 1) 21%,
+		rgba(250, 139, 131, 1) 46%
+	);
+
+	border: 0.5px solid #fff;
+	border-radius: 1em;
+
+	cursor: pointer;
+}
+
+.rol-dice:hover,
+.rol-dice:focus {
+	background: linear-gradient(
+		97deg,
+		rgba(183, 42, 8, 0.5) 21%,
+		rgba(250, 139, 131, 0.5) 46%
+	);
+}
