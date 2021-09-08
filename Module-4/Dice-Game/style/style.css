@@ -125,13 +125,13 @@ p {
 
 .rol-dice {
 	position: absolute;
-	bottom: 6%;
+	bottom: 4%;
 	left: 51%;
 	transform: translateX(-50%);
 
 	color: inherit;
 
-	padding: 0.3em;
+	padding: 0.3em 0.2em;
 
 	background: rgb(183, 42, 8);
 	background: linear-gradient(
