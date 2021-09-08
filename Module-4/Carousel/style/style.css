@@ -7,15 +7,7 @@ html {
 }
 
 body {
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
-	background-image: url("../images/card-images/image-1.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-color: rgba(0, 0, 0, 0.712);
-	background-blend-mode: multiply;
+	margin: 0;
 }
 
 img {
@@ -26,6 +18,28 @@ img {
 .container {
 	display: flex;
 	height: 100vh;
+}
+
+.bg-1,
+.bg-2 {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.712);
+	background-blend-mode: multiply;
+
+	animation: fade 1.3s;
+}
+
+.bg-1 {
+	background-image: url("../images/card-images/image-1.png");
+}
+
+.bg-2 {
+	background-image: url("../images/card-images/image-2.png");
 }
 
 .card {
