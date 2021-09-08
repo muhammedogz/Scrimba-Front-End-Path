@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1rem;
+
+	min-height: 100vh;
+	display: flex;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+/* typography */
+
+.container {
+	font-size: clamp(1rem, 1rem + 2vw, 3rem);
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+p {
+	font-size: 1.3em;
+}
+
+/* layout */
+
+.container {
+	position: relative;
+	background-color: antiquewhite;
+
+	margin: auto;
+
+	text-align: center;
+}
+
+.container > h1 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: 0.5em;
+}
+
+.game {
+	display: flex;
+}
+
+.card {
+	background-color: rgba(0, 0, 0, 0.253);
+	padding-inline: clamp(2em, 1em + 8vw, 5em);
+	padding-top: 5rem;
+	padding-bottom: 3em;
+}
+
+.player-1 {
+	background-color: blue;
+	border-right: 2px solid black;
+}
+
+.player-2 {
+	border-left: 2px solid black;
+}
+
+.card > p {
+	margin-block: 2em;
+}
+
+.dice-container {
+	padding: 0.5em 1.6em;
+	background-color: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dice {
+	margin: 0;
+	font-size: 3em;
+}
+
+.rol-dice {
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+}
