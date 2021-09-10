@@ -89,3 +89,7 @@ Also part of the this [repo](https://github.com/muhammedogz/Scrimba-Responsive-D
 - BBQ Splash Page -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/Stepping-up-our-style/BBQ-Splash/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/Stepping-up-our-style/BBQ-Splash)
+
+----
+
+### Module 6 - Next-level JavaScript
