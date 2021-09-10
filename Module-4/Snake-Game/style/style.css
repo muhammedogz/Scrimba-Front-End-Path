@@ -6,4 +6,98 @@ body {
 	margin: 0;
 
 	background-color: purple;
+
+	height: 100vh;
+	display: flex;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+/* typography */
+
+.title {
+	font-size: clamp(2em, 5vw + 1em, 5em);
+}
+
+.score {
+	font-size: clamp(1.5em, 5vw + 1em, 3em);
+}
+
+/* layout */
+
+.game {
+	background-color: antiquewhite;
+
+	width: 90%;
+	margin: auto;
+	padding-bottom: 2em;
+
+	text-align: center;
+}
+
+/* text */
+
+.title,
+.score {
+	margin-bottom: 0.3em;
+}
+
+.score {
+	margin-top: 0.3em;
+}
+
+/* button */
+
+.btn {
+	background-color: darkkhaki;
+
+	padding: 1em;
+
+	border: 1px solid green;
+	border-radius: 2em;
+
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: rgba(189, 183, 107, 0.5);
+}
+
+/* game grid */
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 50vw;
+	height: 50vw;
+
+	border: 2px solid black;
+
+	margin: auto;
+}
+
+@media (min-width: 1200px) {
+	.grid {
+		height: 30vw;
+	}
+}
+
+/* grid content */
+
+.grid > div {
+	width: 2.5vw;
+	height: 2.5vw;
+
+	border: 0.5px solid blue;
+}
+
+@media (min-width: 1200px) {
+	.grid > div {
+		height: 1.5vw;
+	}
 }
