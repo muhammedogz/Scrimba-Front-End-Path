@@ -108,3 +108,7 @@ h2 {
 .snake {
 	background-color: #375;
 }
+
+.food {
+	background-color: #524;
+}

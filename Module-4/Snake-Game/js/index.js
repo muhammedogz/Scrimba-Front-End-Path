@@ -1,14 +1,17 @@
 const grid = document.querySelector(".grid");
 
 const startBtn = document.getElementById("start"); 
+const score = document.getElementById("score");
+let scoreHolder = 0;
 
 const width = 20;
-const snakeSpeed = 250;
+const snakeSpeed = 100;
 
 let squares = [];
 let snake = [3,2,1];
 let direction = 1;
 let gameStatus = 0;
+let food = Math.floor(Math.random() * width*width);
 
 let timeId = 0;
 
@@ -19,6 +22,7 @@ startBtn.addEventListener("click", start);
 function main() {
     createGrid();    
     renderSnakeEach();
+    generateFood();
 }
 
 main();
@@ -36,6 +40,11 @@ function start() {
         snake = [3,2,1];
         clearInterval(timeId);
         gameStatus = 0;
+        direction = 1;
+        
+        scoreHolder = 0;
+        score.innerHTML = scoreHolder;
+
         main();
     }
 }
@@ -66,25 +75,50 @@ function move() {
     squares[tail].classList.remove("snake");
     snake.unshift(snake[0] + direction);
     renderSnakeEach();
+
+    if(checkFoodEat())
+    {
+        score.textContent = ++scoreHolder;
+    } 
 }
 
 function controlSnake(event) {
-    if (event.key === "ArrowUp") {
+    if (event.key === "ArrowUp" || event.key === "w") {
         console.log("up");
         direction = -width;
     }
-    else if (event.key === "ArrowDown") {
+    else if (event.key === "ArrowDown" || event.key === "s") {
         console.log("down");
         direction = width;
     }
-    else if (event.key === "ArrowLeft") {
+    else if (event.key === "ArrowLeft" || event.key === "a") {
         console.log("left");
         direction = -1;
     }
-    else if (event.key === "ArrowRight") {
+    else if (event.key === "ArrowRight" || event.key === "d") {
         console.log("right");
         direction = 1;
     }
+    console.log(event.key);
+}
+
+function generateFood() {
+    while (snake.includes(food))
+    {
+        food = Math.floor(Math.random() * width*width);
+    }
+    console.log(food);
+    squares[food].classList.add("food");
+}
+
+function checkFoodEat() {
+    if (snake[0] === food)
+    {
+        squares[food].classList.remove("food");
+        generateFood();
+        return true;
+    }
+    return false;
 }
 
 
