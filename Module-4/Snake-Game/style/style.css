@@ -74,7 +74,7 @@ h2 {
 	flex-wrap: wrap;
 
 	width: 50vw;
-	height: 50vw;
+	height: calc(50vw + 24px);
 
 	border: 2px solid black;
 
@@ -83,17 +83,17 @@ h2 {
 
 @media (min-width: 1200px) {
 	.grid {
-		height: 30vw;
+		height: calc(30vw + 5px);
 	}
 }
 
 /* grid content */
 
 .grid > div {
-	width: 2.5vw;
-	height: 2.5vw;
+	width: calc(2.5vw - 0.2px);
+	height: calc(2.5vw + 1px);
 
-	border: 0.5px solid blue;
+	border: 1px solid rgba(0, 0, 255, 0.05);
 }
 
 @media (min-width: 1200px) {
