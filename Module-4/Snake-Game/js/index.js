@@ -1,23 +1,44 @@
 const grid = document.querySelector(".grid");
 
+const startBtn = document.getElementById("start"); 
+
 const width = 20;
 const snakeSpeed = 250;
 
 let squares = [];
 let snake = [3,2,1];
 let direction = 1;
+let gameStatus = 0;
+
+let timeId = 0;
+
+document.addEventListener("keydown", controlSnake);
+
+startBtn.addEventListener("click", start);
 
 function main() {
     createGrid();    
     renderSnakeEach();
-    const timeId = setInterval(move, snakeSpeed);
-    // clearInterval(timeId);
 }
-
-document.addEventListener("keydown", controlSnake);
 
 main();
 
+function start() {
+    if (gameStatus === 0) {
+        timeId = setInterval(move, snakeSpeed);
+        gameStatus = 1;
+    }
+    else {
+        squares.forEach(function(num) {
+            grid.removeChild(num);
+        });
+        squares = [];
+        snake = [3,2,1];
+        clearInterval(timeId);
+        gameStatus = 0;
+        main();
+    }
+}
 
 function createGrid() {
 
@@ -34,7 +55,6 @@ function createGrid() {
 
 function renderSnakeEach() {
     snake.forEach(renderSnake);
-    console.log(snake);
 }
 
 function renderSnake(item) {
