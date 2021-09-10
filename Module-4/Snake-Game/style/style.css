@@ -3,6 +3,7 @@
 }
 
 body {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	margin: 0;
 
 	background-color: purple;
@@ -89,7 +90,7 @@ h2 {
 
 /* grid content */
 
-.grid > div {
+.square {
 	width: calc(2.5vw - 0.2px);
 	height: calc(2.5vw + 1px);
 
@@ -100,4 +101,10 @@ h2 {
 	.grid > div {
 		height: 1.5vw;
 	}
+}
+
+/* snake */
+
+.snake {
+	background-color: #375;
 }
