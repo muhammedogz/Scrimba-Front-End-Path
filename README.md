@@ -42,15 +42,15 @@ This module teach JavaScript basics.
 ### Module 4 - CSS & JavaScript fundamentals
 
 CSS Challenges Part\
-This three example taken from my other repo that I completed Responsive Design Course.
+This three example taken from my other [repo](https://github.com/muhammedogz/Scrimba-Responsive-Design) that I completed Responsive Design Course.
 
-- Practice Time ->
+- Practice Time -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/CSS-Fundamentals/Practice-Time/) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Practice-Time)
-- Compound Practice ->
+- Compound Practice -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/CSS-Fundamentals/Compound-Practice/) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Compound-Practice)
-- Putting It All Together ->
+- Putting It All Together -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/CSS-Fundamentals/Putting-It-All-Together) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/CSS-Fundamentals/Putting-It-All-Together)
   
@@ -71,3 +71,21 @@ JavaScript Challenges Part
 - Snake Game -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-4/Snake-Game/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-4/Snake-Game)
+
+----
+
+### Module 5 - Responsive Design
+
+This module aims to think responsively and adapt responsive design to web projects.\
+Also part of the this [repo](https://github.com/muhammedogz/Scrimba-Responsive-Design).
+
+- More Fancy -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/Starting-to-think-responsively/More-Fancy/) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/Starting-to-think-responsively/More-Fancy)
+- Living the Simple Life -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/Starting-to-think-responsively/Living-The-Simple-Life/) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/Starting-to-think-responsively/Living-The-Simple-Life)\
+    A complete responsive blog site.
+- BBQ Splash Page -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/Stepping-up-our-style/BBQ-Splash/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/Stepping-up-our-style/BBQ-Splash)
