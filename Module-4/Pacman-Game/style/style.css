@@ -89,12 +89,34 @@ h2 {
 .square {
 	width: calc(2vw - 0.2px);
 	height: calc(2vw + 1px);
-
-	border: 1px solid rgba(0, 0, 255, 0.5);
 }
 
 @media (min-width: 1200px) {
 	.grid > div {
 		height: 1.15vw;
 	}
+}
+
+/* game colors */
+
+.pacdots {
+	background-color: #df9723;
+	border: 3px solid black;
+}
+
+.wall {
+	background-color: #144fc0;
+}
+
+.ghost-lair {
+	background-color: #00000085;
+}
+
+.powerpellets {
+	background-color: #fbea0b;
+	border: 2px solid black;
+}
+
+.empty {
+	background-color: black;
 }
