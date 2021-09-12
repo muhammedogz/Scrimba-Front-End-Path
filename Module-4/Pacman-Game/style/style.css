@@ -80,7 +80,7 @@ h2 {
 
 @media (min-width: 1200px) {
 	.grid {
-		height: calc(32.3vw);
+		height: calc(60vw);
 	}
 }
 
@@ -92,8 +92,8 @@ h2 {
 }
 
 @media (min-width: 1200px) {
-	.grid > div {
-		height: 1.15vw;
+	.square {
+		height: 1.8vw;
 	}
 }
 
@@ -119,4 +119,14 @@ h2 {
 
 .empty {
 	background-color: black;
+}
+
+@media (min-width: 630px) {
+	.pacdots {
+		border: clamp(5px, 3px + 0.2vw, 8px) solid black;
+	}
+
+	.powerpellets {
+		border: 5px solid black;
+	}
 }
