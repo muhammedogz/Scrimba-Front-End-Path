@@ -18,7 +18,7 @@ h2 {
 /* layout */
 
 .container {
-	background-color: antiquewhite;
+	background-color: rgba(0, 0, 0, 0.26);
 
 	width: 90%;
 	margin: auto;
@@ -63,31 +63,38 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 
-	width: 50vw;
-	height: calc(50vw + 24px);
+	width: 55.9vw;
+	height: 62vw;
 
+	background-color: #000;
 	border: 2px solid black;
 
 	margin: auto;
 }
 
+@media (min-width: 700px) {
+	.grid {
+		height: 60vw;
+	}
+}
+
 @media (min-width: 1200px) {
 	.grid {
-		height: calc(30vw + 5px);
+		height: calc(32.3vw);
 	}
 }
 
 /* grid content */
 
 .square {
-	width: calc(2.5vw - 0.2px);
-	height: calc(2.5vw + 1px);
+	width: calc(2vw - 0.2px);
+	height: calc(2vw + 1px);
 
-	border: 1px solid rgba(0, 0, 255, 0.05);
+	border: 1px solid rgba(0, 0, 255, 0.5);
 }
 
 @media (min-width: 1200px) {
 	.grid > div {
-		height: 1.5vw;
+		height: 1.15vw;
 	}
 }
