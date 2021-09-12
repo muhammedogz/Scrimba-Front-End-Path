@@ -93,3 +93,13 @@ Also part of the this [repo](https://github.com/muhammedogz/Scrimba-Responsive-D
 ----
 
 ### Module 6 - Next-level JavaScript
+
+This module teaches modern JavaScript patterns. ES6+.
+
+- PacMan Game -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-6/Pacman-Game)\
+  Not completed 🥺
+
+----
+
+### Module 7 - Working with APIs
