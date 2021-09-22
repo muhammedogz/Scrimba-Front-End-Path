@@ -10,21 +10,36 @@ const rightBtn = document.getElementById("right");
 let imageCount = 1;
 const maxImageCount = 10;
 
-rightBtn.addEventListener("click", function() {
+document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft" || event.key === "a") {
+        left();
+    }
+    else if (event.key === "ArrowRight" || event.key === "d") {
+        right();
+    }
+});
+
+
+
+rightBtn.addEventListener("click", right);
+leftBtn.addEventListener("click", left);
+
+
+function right() {
     imageCount++;
     if (imageCount > maxImageCount)
         imageCount = 1;
 
     renderImage();
-});
+}
 
-leftBtn.addEventListener("click", function() {
+function left() {
     imageCount--;
     if (imageCount < 1)
         imageCount = maxImageCount;
     
     renderImage();
-});
+}
 
 function renderImage() {
     const nextImage = `images/card-images/image-${imageCount}.png`;
