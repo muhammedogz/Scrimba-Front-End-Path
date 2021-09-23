@@ -9,13 +9,14 @@ let info = [];
 // if there is a previous data
 // store in info and render it
 const localCheck = JSON.parse(localStorage.getItem("lead"));
+// if local not null, take values from it
 if (localCheck)
 {
     info = localCheck; 
     renderUl();
 }
 
-
+// add click event
 saveEl.addEventListener("click", function() {
     const value = inputEl.value;
     if (value.length === 0)
@@ -45,6 +46,7 @@ function renderUl() {
     // ulEl.append(li);
 }
 
+// save current tab
 tabEl.addEventListener("click", function() {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
         info.push(tabs[0].url);
@@ -55,6 +57,7 @@ tabEl.addEventListener("click", function() {
 
 });
 
+// delete saved ones
 deleteEl.addEventListener("dblclick", function() {
     info = [];
     localStorage.setItem("lead",JSON.stringify(info));
