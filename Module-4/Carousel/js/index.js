@@ -8,7 +8,11 @@ const rightBtn = document.getElementById("right");
 // body.style.background = "url(\"images/icon.png\")";
 
 let imageCount = 1;
+
+// Image count value.
+// ! Change this when new images added.
 const maxImageCount = 10;
+
 
 document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft" || event.key === "a") {
@@ -19,11 +23,8 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
-
-
 rightBtn.addEventListener("click", right);
 leftBtn.addEventListener("click", left);
-
 
 function right() {
     imageCount++;
