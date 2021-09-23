@@ -13,7 +13,7 @@ let imageCount = 1;
 // ! Change this when new images added.
 const maxImageCount = 10;
 
-
+// keyboard functionality 
 document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft" || event.key === "a") {
         left();
@@ -23,6 +23,7 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
+// Click functionality
 rightBtn.addEventListener("click", right);
 leftBtn.addEventListener("click", left);
 
