@@ -47,11 +47,14 @@ function renderGame() {
     
 }
 
+// take new card
 function newCard() {
     cards.push(generateRandom());
     renderGame();
 }
 
+// generate random number for game
+// between 1-11
 function generateRandom() {
     return Math.floor(Math.random() * 10) + 1;
 }
