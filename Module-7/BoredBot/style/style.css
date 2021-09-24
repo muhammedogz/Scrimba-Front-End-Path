@@ -32,13 +32,13 @@ body {
 
 	display: flex;
 
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 }
 
 /* layout */
 
 .container {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 }
 
