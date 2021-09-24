@@ -104,4 +104,4 @@ This module teaches modern JavaScript patterns. ES6+.
 
 ### Module 7 - Working with APIs
 
-This module teaches APIs with showing different APIs.
+This module teaches APIs with showing different APIs and Asynchronous JavaScript.
