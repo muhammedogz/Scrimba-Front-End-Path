@@ -105,3 +105,9 @@ This module teaches modern JavaScript patterns. ES6+.
 ### Module 7 - Working with APIs
 
 This module teaches APIs with showing different APIs and Asynchronous JavaScript.
+
+- Bored Bot -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-7/BoredBot/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-7/BoredBot)\
+    Generate random image and random idea to solve your boringness.\
+    Use random dog image API and random idea API.
