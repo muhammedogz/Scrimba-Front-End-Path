@@ -9,6 +9,8 @@ html {
 }
 
 body {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
 	background-color: rgb(238, 174, 202);
 	background: radial-gradient(
 		circle,
