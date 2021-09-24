@@ -2,14 +2,28 @@
 	box-sizing: border-box;
 }
 
+body,
+html {
+	height: 100vh;
+	overflow: hidden;
+}
+
 body {
-	background: rgb(238, 174, 202);
+	background-color: rgb(238, 174, 202);
 	background: radial-gradient(
 		circle,
 		rgba(238, 174, 202, 1) 0%,
 		rgba(148, 187, 233, 1) 100%
 	);
 
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	background-color: rgba(56, 58, 55, 0.877);
+	background-blend-mode: multiply;
+
+	color: white;
 	text-align: center;
 
 	margin: 0;
