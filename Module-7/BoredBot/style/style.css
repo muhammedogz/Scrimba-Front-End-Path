@@ -40,6 +40,8 @@ body {
 .container {
 	width: 90%;
 	margin: auto;
+
+	transform: translateY(-50%);
 }
 
 button {
