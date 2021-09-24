@@ -3,5 +3,35 @@
 }
 
 body {
+	background: rgb(238, 174, 202);
+	background: radial-gradient(
+		circle,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
+
+	text-align: center;
+
 	margin: 0;
+}
+
+/* layout */
+
+.container {
+	width: 50%;
+	margin: auto;
+}
+
+button {
+	background-color: purple;
+	border: none;
+	cursor: pointer;
+
+	padding: 3em;
+	margin-top: 1em;
+
+	border-radius: 5em;
+	border: 1px solid black;
+
+	box-shadow: rgba(148, 187, 233, 1) 0px 5px 15px;
 }
