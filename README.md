@@ -104,7 +104,7 @@ This module teaches modern JavaScript patterns. ES6+.
 
 ### Module 7 - Working with APIs
 
-This module teaches APIs with showing different APIs and Asynchronous JavaScript.
+This module teaches APIs with showing different APIs and introduces Asynchronous JavaScript.
 
 - Bored Bot -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-7/BoredBot/index.html) -
