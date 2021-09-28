@@ -4,3 +4,7 @@
 node_modules
 package-lock.json
 package.json
+
+# ignore test files
+test.js
+test.html
