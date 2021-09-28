@@ -1,1 +1,6 @@
 /.vscode
+
+# Disable those for working with some syntax higlight and quokka extensions
+node_modules
+package-lock.json
+package.json
