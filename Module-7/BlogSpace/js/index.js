@@ -1,6 +1,6 @@
-const body = document.getElementById("body");
+const main = document.querySelector("main");
 
-console.log(body);
+console.log(main);
 
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     .then(res => res.json())
@@ -12,18 +12,17 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 
 
 function writeBlog(blog) {
-    let bodyHTML = "";
+    let mainHTML = "";
 
     blog.forEach(item => {
-        bodyHTML += `
+        mainHTML += `
         <article>
             <h2>${item.title}</h2>
             <p>${item.body}</p>
         </article>
         `
     });
-    console.log(body.innerHTML);
-    body.innerHTML += bodyHTML;
+    main.innerHTML += mainHTML;
     
 }
 
