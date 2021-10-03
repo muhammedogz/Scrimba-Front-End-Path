@@ -3,6 +3,11 @@
 }
 
 body {
+	font-family: "Lato", sans-serif;
+
+	line-height: 1.2;
+	letter-spacing: 1.2;
+
 	margin: 0;
 
 	background-color: #e3e6ec;
@@ -25,6 +30,7 @@ body {
 header {
 	text-align: center;
 	margin-top: 1em;
+	padding-bottom: 0.5em;
 	border-bottom: 2px solid black;
 }
 
@@ -57,5 +63,5 @@ article h2 {
 }
 
 article p {
-	padding-inline: 1em;
+	padding-inline: 0.5em;
 }
