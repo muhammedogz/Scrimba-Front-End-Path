@@ -39,6 +39,58 @@ header p {
 	margin: 0;
 }
 
+/* form */
+
+form {
+	margin-block: 2em;
+	padding: 2em;
+	text-align: center;
+
+	background-color: #c2c4c881;
+}
+
+form div {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+
+	margin-block: 1em;
+}
+
+form input,
+form textarea {
+	font-family: inherit;
+	padding: 0.3em;
+	margin-top: 0.2em;
+
+	border: 2px solid black;
+
+	width: 80%;
+
+	resize: none;
+}
+
+form button {
+	width: 50%;
+
+	color: white;
+	border: 1px solid black;
+	background: rgb(219, 88, 88);
+
+	cursor: pointer;
+
+	transform: scale(1);
+	transition: all 250ms;
+}
+
+form button:hover {
+	transform: scale(1.1);
+	background-color: blanchedalmond;
+	color: black;
+}
+
 /* main */
 
 main {
