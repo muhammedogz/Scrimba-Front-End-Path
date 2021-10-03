@@ -111,3 +111,8 @@ This module teaches APIs with showing different APIs and introduces Asynchronous
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-7/BoredBot)\
     Generate random image and random idea to solve your boringness.\
     Use random dog image API and random idea API.
+- BlogSpace -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-7/BlogSpace/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-7/BlogSpace)\
+  Get some random blog posts from an Blog API.\
+  Send request to API with adding new blog post and render it.
