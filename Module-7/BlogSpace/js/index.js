@@ -1,5 +1,6 @@
 const main = document.querySelector("main");
 
+const postForm = document.getElementById("post-form");
 const postTitle = document.getElementById("post-title");
 const postBody = document.getElementById("post-body");
 const btn = document.getElementById("post-submit");
@@ -26,7 +27,8 @@ function writeBlog(blog) {
     main.innerHTML += mainHTML;
 }
 
-btn.addEventListener("click",() => {
+postForm.addEventListener("submit",(e) => {
+    e.preventDefault();
     console.log("clicked");
     main.innerHTML += `<article>
             <h2>${postTitle.value}</h2>
