@@ -4,9 +4,58 @@
 
 body {
 	margin: 0;
+
+	background-color: #e3e6ec;
+	background-image: url(../images/bg.svg);
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
-main {
+/* layout */
+
+.container {
 	width: 70%;
+	max-width: 800px;
 	margin: auto;
+	margin-bottom: 3em;
+}
+
+/* header */
+
+header {
+	text-align: center;
+	margin-top: 1em;
+	border-bottom: 2px solid black;
+}
+
+header h1,
+header p {
+	margin: 0;
+}
+
+/* main */
+
+main {
+	padding: 3em;
+	padding-top: 1em;
+	background-color: rgba(213, 215, 221, 0.739);
+}
+
+/* article */
+
+article {
+	border-bottom: 1px solid gray;
+}
+
+/* disable last child border */
+article:last-child {
+	border: none;
+}
+
+article h2 {
+	text-align: center;
+}
+
+article p {
+	padding-inline: 1em;
 }
