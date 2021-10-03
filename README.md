@@ -26,12 +26,10 @@ This module teach JavaScript basics.
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Blackjack/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-3/Blackjack) \
     A basic Blackjack game.
-
 - Chrome Extension -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Chrome-Extension/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-3/Chrome-Extension/) \
     An extension for HR. Not has fully functionality in browser. Should be in active extensions.
-
 - Personality in Emojis -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-3/Personality-Emojis/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-3/Personality-Emojis) \
