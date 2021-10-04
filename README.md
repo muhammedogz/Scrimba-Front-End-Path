@@ -114,3 +114,8 @@ This module teaches APIs with showing different APIs and introduces Asynchronous
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-7/BlogSpace)\
   Get some random blog posts from an Blog API.\
   Send request to API with adding new blog post and render it.
+- War Card Game -
+  [Live Demo](Module-7/War-Game/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-7/War-Game)\
+  A basic playing card War Game. Use Playing Card API.
+  
