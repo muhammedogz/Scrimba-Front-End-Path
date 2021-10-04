@@ -18,7 +18,7 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-blend-mode: multiply;
-	background-repeat: round;
+	background-repeat: repeat;
 }
 
 .flex {
