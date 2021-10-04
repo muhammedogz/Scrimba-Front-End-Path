@@ -16,12 +16,7 @@ let computerScoreValue = 0;
 
 const remainingCard = document.querySelector("#remaining");
 
-const allCards = ["2","3","4","5","6","7","8","9","JACK","QUEEN","KING","ACE"];
-
-console.log(allCards.indexOf("JACK"));
-
 let deckId = 0;
-
 
 newGameBtn.addEventListener("click", () => {
     fetch("https://apis.scrimba.com/deckofcards/api/deck/new/shuffle/")
@@ -72,7 +67,8 @@ function renderPage(cards, remaining) {
     remainingCard.innerText = remaining;
 }
 
-function checkWinner(player, computer, remaining) {
+function checkWinner(player, computer) {
+    const allCards = ["2","3","4","5","6","7","8","9","JACK","QUEEN","KING","ACE"];
     const valuePlayer = allCards.indexOf(player.value);
     const valueComputer = allCards.indexOf(computer.value);
     
@@ -89,6 +85,8 @@ function checkWinner(player, computer, remaining) {
 
 function isFinished(remaining) {
     if (!remaining) {
+        drawBtn.disabled = true;
+
         const winner = playerScoreValue > computerScoreValue ? "Player Won The Game!" : "Computer Won The Game!";
         gameStatus.textContent = "Game is Over. " + winner;
         return true;

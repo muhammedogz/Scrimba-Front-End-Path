@@ -136,6 +136,10 @@ button:focus {
 	color: rgb(168, 168, 214);
 }
 
+button:disabled {
+	cursor: not-allowed;
+}
+
 /* helper class */
 
 .hidden {
