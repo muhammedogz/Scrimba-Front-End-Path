@@ -4,25 +4,26 @@
 
 body,
 html {
-	height: 100vh;
-	overflow: hidden;
+	height: calc(100vh - 20px);
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	font-family: "Roboto Slab", serif;
-	margin: 0;
 
 	color: #fff;
 	background-color: #2d6d31;
 	background-image: url("../images/bg.jpg");
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	background-blend-mode: multiply;
 	background-repeat: round;
 }
 
 .flex {
 	display: flex;
+	flex-wrap: nowrap;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -62,7 +63,7 @@ header nav {
 .remaining {
 	text-align: left;
 	margin-bottom: 0.5em;
-	transform: translateY(-0.5em);
+	transform: translateY(-1em);
 }
 
 /* players */
@@ -72,16 +73,21 @@ header nav {
 	flex-direction: column;
 	align-items: center;
 
-	padding-bottom: 0.5em;
-	margin-top: 0.5em;
+	padding-block: 0.5em;
 }
 
 .player:nth-child(2) {
 	border-bottom: 2px solid gray;
 }
 
-.player:nth-child(3) {
+.player:nth-child(4) {
+	border-top: 2px solid gray;
 	margin-bottom: 1em;
+}
+
+#status {
+	margin-block: 0.5em;
+	font-weight: 700;
 }
 /*
 width: 225px;
