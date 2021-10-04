@@ -7,6 +7,8 @@ const drawBtn = document.getElementById("draw-card");
 const cardPlayer = document.getElementById("cardPlayer");
 const cardComputer = document.getElementById("cardComputer");
 
+let gameStatus = document.getElementById("status");
+
 const computerScore = document.getElementById("computer-score");
 const playerScore = document.getElementById("player-score");
 let playerScoreValue = 0;
@@ -18,7 +20,6 @@ const allCards = ["2","3","4","5","6","7","8","9","JACK","QUEEN","KING","ACE"];
 
 console.log(allCards.indexOf("JACK"));
 
-let remaining = 52;
 let deckId = 0;
 
 
@@ -36,6 +37,9 @@ drawBtn.addEventListener("click", () => {
     .then(res => res.json())
     .then(data => {
         renderPage(data.cards, data.remaining);
+
+        if (isFinished(data.remaining)) return;
+
         checkWinner(data.cards[0], data.cards[1]);
     });
 });
@@ -49,8 +53,7 @@ function startRestartGame() {
         mainEl.classList.add("display-none");
         bodyEl.classList.add("flex");
         newGameBtn.innerText = "Start Game";
-        remaining = 56;
-        remainingCard.innerText = remaining;
+        remainingCard.innerText = "52";
         computerScore.innerText = "0";
         playerScore.innerText = "0";
     }
@@ -62,15 +65,28 @@ function renderPage(cards, remaining) {
     remainingCard.innerText = remaining;
 }
 
-function checkWinner(player, computer) {
+function checkWinner(player, computer, remaining) {
     const valuePlayer = allCards.indexOf(player.value);
     const valueComputer = allCards.indexOf(computer.value);
-
+    
     if (valuePlayer > valueComputer) {
         playerScore.innerText = ++playerScoreValue;
+        gameStatus.textContent = "Player won this round";
     } else if (valueComputer > valuePlayer) {
         computerScore.innerText = ++computerScoreValue;
+        gameStatus.textContent = "Computer won this round";
+    } else {
+        gameStatus.textContent = "Round was draw";
     }
+}
+
+function isFinished(remaining) {
+    if (!remaining) {
+        const winner = playerScoreValue > computerScoreValue ? "Player Won The Game!" : "Computer Won The Game!";
+        gameStatus.textContent = "Game is Over. " + winner;
+        return true;
+    }
+    return false;
 }
 
 
