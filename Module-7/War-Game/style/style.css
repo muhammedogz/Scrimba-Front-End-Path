@@ -5,3 +5,50 @@
 body {
 	margin: 0;
 }
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+/* layout */
+
+.container {
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+}
+
+/* header */
+
+header {
+	margin-block: 1em !important;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* main */
+
+main {
+	border: 2px solid gray;
+}
+
+/* players */
+
+.player {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid blue;
+}
+
+.card {
+	width: 9em;
+	height: 13em;
+	border: 2px solid green;
+}
