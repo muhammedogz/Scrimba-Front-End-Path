@@ -43,7 +43,12 @@ header nav {
 /* main */
 
 main {
-	border: 2px solid gray;
+}
+
+.remaining {
+	text-align: left;
+	margin-bottom: 0.5em;
+	transform: translateY(-0.5em);
 }
 
 /* players */
@@ -53,13 +58,24 @@ main {
 	flex-direction: column;
 	align-items: center;
 
-	margin-top: 1em;
-	margin-bottom: 2em;
+	padding-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+.player:nth-child(2) {
+	border-bottom: 2px solid gray;
+}
+
+.player:nth-child(3) {
+	margin-bottom: 1em;
 }
 
 .card {
 	width: 9em;
 	height: 13em;
+
+	margin-block: 0.5em;
+
 	background-color: #0c8a0c;
 	border: 2px solid #0c8a0c;
 }
