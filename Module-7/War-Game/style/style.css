@@ -2,9 +2,20 @@
 	box-sizing: border-box;
 }
 
+body,
+html {
+	height: 100vh;
+	overflow: hidden;
+}
+
 body {
 	font-family: "Roboto Slab", serif;
 	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 	color: #fff;
 	background-color: #2d6d31;
@@ -81,8 +92,41 @@ header nav {
 	border: 2px solid #0c8a0c;
 }
 
+#player-score span,
+#computer-score span {
+	font-weight: 700;
+}
+
+/* button */
+
+button {
+	background: #0bb19b;
+	border: none;
+
+	padding-inline: 0.5em;
+	padding-block: 0.8em;
+
+	border-radius: 1em;
+
+	color: inherit;
+
+	cursor: pointer;
+
+	transition: all 250ms;
+}
+
+button:hover,
+button:focus {
+	background-color: #0bb19b8f;
+	color: rgb(168, 168, 214);
+}
+
 /* helper class */
 
 .hidden {
+	visibility: hidden;
+}
+
+.display-none {
 	display: none;
 }
