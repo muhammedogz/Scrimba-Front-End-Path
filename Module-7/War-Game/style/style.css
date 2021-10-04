@@ -4,6 +4,14 @@
 
 body {
 	margin: 0;
+
+	color: #fff;
+	background-color: #2d6d31;
+	background-image: url("../images/bg.jpg");
+	background-position: center;
+	background-size: contain;
+	background-blend-mode: multiply;
+	background-repeat: round;
 }
 
 h1,
@@ -44,11 +52,14 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 2px solid blue;
+
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 
 .card {
 	width: 9em;
 	height: 13em;
-	border: 2px solid green;
+	background-color: #0c8a0c;
+	border: 2px solid #0c8a0c;
 }
