@@ -52,10 +52,17 @@ function startRestartGame() {
     } else {
         mainEl.classList.add("display-none");
         bodyEl.classList.add("flex");
-        newGameBtn.innerText = "Start Game";
-        remainingCard.innerText = "52";
-        computerScore.innerText = "0";
-        playerScore.innerText = "0";
+
+        cardPlayer.style.backgroundImage = ``;
+        cardComputer.style.backgroundImage = ``;
+
+        newGameBtn.textContent = "Start Game";
+        remainingCard.textContent = "52";
+
+        playerScoreValue = 0;
+        computerScoreValue = 0;
+        computerScore.textContent = "0";
+        playerScore.textContent = "0";
     }
 }
 
