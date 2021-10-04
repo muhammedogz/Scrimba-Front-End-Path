@@ -3,6 +3,7 @@
 }
 
 body {
+	font-family: "Roboto Slab", serif;
 	margin: 0;
 
 	color: #fff;
@@ -42,8 +43,8 @@ header nav {
 
 /* main */
 
-main {
-}
+/* main {
+} */
 
 .remaining {
 	text-align: left;
@@ -78,4 +79,10 @@ main {
 
 	background-color: #0c8a0c;
 	border: 2px solid #0c8a0c;
+}
+
+/* helper class */
+
+.hidden {
+	display: none;
 }
