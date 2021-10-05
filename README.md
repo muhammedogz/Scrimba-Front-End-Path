@@ -118,4 +118,9 @@ This module teaches APIs with showing different APIs and introduces Asynchronous
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-7/War-Game/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-7/War-Game)\
   A basic playing card War Game. Use Playing Card API.
+- Dashboard Extension -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-7/Dashboard-Extension/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-7/Dashboard-Extension)\
+  A chrome extension that shows current currency, weather and time in every new page opened.\
+  Use weather api, geolocation api and an open source currency api.
   
