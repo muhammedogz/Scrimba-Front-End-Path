@@ -10,11 +10,16 @@ html {
 
 body {
 	font-size: 3rem;
+
+	text-shadow: 1px 1px 2px #474747;
 	color: #fff;
 
 	background-color: #03000386;
-	background-size: cover;
 	background-blend-mode: multiply;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .flex-container {
@@ -70,21 +75,18 @@ footer p {
 }
 
 .footer a {
-	border-bottom: 1px solid #453886;
-	color: #453886;
+	border-bottom: 1px solid #38867b;
+	color: #38867b;
 	padding-bottom: 0;
 	text-decoration: none;
+
+	transition: all 250ms;
 }
 
-.footer a:hover {
-	color: #2196f3;
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-	background-position: bottom;
-	background-repeat: repeat-x;
-	background-size: 20%;
-	border-bottom: 0;
-	padding-bottom: 0.3em;
-	text-decoration: none;
+.footer a:hover,
+.footer a:focus {
+	color: #b4f321;
+	border-bottom: 1px solid #b4f321;
 }
 
 /* helper class */
