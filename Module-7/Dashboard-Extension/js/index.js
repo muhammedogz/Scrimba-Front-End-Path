@@ -8,6 +8,10 @@ const dollar = document.getElementById("dollar");
 const euro = document.getElementById("euro");
 const pound = document.getElementById("pound");
 
+const temperature = document.getElementById("temperature");
+const cityLocation = document.getElementById("location");
+const weatherIcon = document.getElementById("weather-icon");
+
 // set current time
 setInterval(() => {
     const date = new Date();
@@ -61,3 +65,27 @@ function getCurrencyTRY(currency, symbol) {
 getCurrencyTRY(dollar, "usd");
 getCurrencyTRY(euro, "eur");
 getCurrencyTRY(pound, "gbp");
+
+// get weather 
+
+navigator.geolocation.getCurrentPosition(position => {
+    fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`)
+        .then(res => {
+            if (!res.ok) {
+                throw Error("Weather data not available");
+            }
+            return res.json();
+        })
+        .then(data => {
+            console.log(data);
+            console.log(data.main.temp);
+            console.log(data.name);
+            const str = "" + data.main.temp;
+            temperature.textContent = str.slice(0,2) + "°";
+            cityLocation.textContent = data.name;
+            console.log(weatherIcon);
+            const iconUrl = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+            weatherIcon.setAttribute("src", iconUrl);
+        })
+        .catch(err => console.error(err));
+});
