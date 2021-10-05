@@ -7,7 +7,12 @@ const euro = document.getElementById("euro");
 const pound = document.getElementById("pound");
 
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=asdasdasd")
-    .then(res => res.json())
+    .then(res => {
+        if (!res.ok) {
+            throw Error("Something went wrong");
+        }
+        return res.json();
+    })
     .then(data => {
         console.log(data);
         imageAuthor.textContent = "By: " + data.user.name;
@@ -25,12 +30,17 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
 
 function getCurrencyTRY(currency, symbol) {
     fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${symbol}/try.json`)
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) {
+                throw Error("Something went wrong");
+            }
+            return res.json();
+        })
         .then(data => {
             const str = "" + data.try;
             currency.textContent = str.slice(0,5);
         })
-        .catch(err => {
+        .catch(() => {
             currency.style.fontSize = "1.1rem";
             currency.textContent = "An error occurred";
         });
