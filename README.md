@@ -123,4 +123,16 @@ This module teaches APIs with showing different APIs and introduces Asynchronous
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-7/Dashboard-Extension)\
   A chrome extension that shows current currency, weather and time in every new page opened.\
   Use weather api, geolocation api and an open source currency api.
-  
+
+### Module 8 - Building apps with Flexbox and Grid
+
+This module aims to learn flexbox, grid and adapt those designs to web projects.\
+Also part of the this [repo](https://github.com/muhammedogz/Scrimba-Responsive-Design).
+
+- Card Component -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/Taking-Flexbox-to-Next-Level/) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/Taking-Flexbox-to-Next-Level)
+- Marketing Agency (with Flexbox) -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/Taking-It-Next-Level/Flexbox/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/Taking-It-Next-Level/Flexbox)\
+  Instructor creates this page with CSS Grid but I created this page with FlexBox for learning purpose.
