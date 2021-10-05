@@ -58,6 +58,7 @@ nav .weather p {
 
 nav li {
 	display: flex;
+	align-items: center;
 }
 
 nav li span {
@@ -68,6 +69,14 @@ nav li span {
 
 nav li img {
 	width: 0.9em;
+}
+
+.try-image {
+	width: 1.2em;
+}
+
+.try {
+	color: #38867b;
 }
 /* main */
 
