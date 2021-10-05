@@ -9,9 +9,12 @@ const euro = document.getElementById("euro");
 const pound = document.getElementById("pound");
 
 // set current time
-const date = new Date();
-const currentTime = date.toLocaleTimeString("tr", {timeStyle: "short"});
-clock.textContent = currentTime;
+setInterval(() => {
+    const date = new Date();
+    const currentTime = date.toLocaleTimeString("tr", {timeStyle: "short"});
+    clock.textContent = currentTime;
+
+}, 1000);
 
 // get new bg image
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=asdasdasd")
