@@ -21,7 +21,7 @@ setInterval(() => {
 }, 1000);
 
 // get new bg image
-fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=asdasdasd")
+fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=tech")
     .then(res => {
         if (!res.ok) {
             throw Error("Something went wrong");
@@ -32,7 +32,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
         console.log(data);
         imageAuthor.textContent = "By: " + data.user.name;
         imageInfo.setAttribute("href", data.links.html);
-        bodyEl.style.backgroundImage = `url(${data.urls.small})`;
+        bodyEl.style.backgroundImage = `url(${data.urls.regular})`;
     })
     .catch(err => {
         console.error(err);
