@@ -56,12 +56,19 @@ nav .weather p {
 	margin: 0;
 }
 
+nav li {
+	display: flex;
+}
+
 nav li span {
 	margin-left: 0.2em;
 	border-bottom: 1px solid gray;
 	font-size: smaller;
 }
 
+nav li img {
+	width: 0.9em;
+}
 /* main */
 
 .clock {
