@@ -1,6 +1,6 @@
 const bodyEl = document.querySelector("body");
 
-const photoCount = 20; // max 100
+const photoCount = 14; // max 100
 
 async function getPhotos(count) {
     const res = await fetch(`https://picsum.photos/v2/list?page=2&limit=${count}`);
@@ -14,7 +14,7 @@ async function getPhotos(count) {
         let url = photo.download_url;
         url = url.slice(0, url.length - 10) + "/200/300";
         
-        html += `<img src="${url}" alt="Author: ${photo.author}">`;
+        html += `<div class="photo" style="background-image: url('${url}");"></div>`;
     
     }
     html += "</div>";
