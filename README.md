@@ -136,3 +136,9 @@ Also part of the this [repo](https://github.com/muhammedogz/Scrimba-Responsive-D
   [Live Demo](https://muhammedogz.github.io/Scrimba-Responsive-Design/Taking-It-Next-Level/Flexbox/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Responsive-Design/tree/master/Taking-It-Next-Level/Flexbox)\
   Instructor creates this page with CSS Grid but I created this page with FlexBox for learning purpose.
+
+Flexbox challenges
+
+- Color Map -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Color-Map/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Color-Map)
