@@ -7,27 +7,20 @@ body {
 }
 
 .photos {
-	height: 100vh;
-
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
-
-	padding: 3em;
-	margin-bottom: 10em;
+	justify-content: center;
+	align-items: center;
 
 	border: 5px solid red;
 }
 
 .photo {
-	background-size: cover;
-	background-position: center;
-
-	margin: 1em;
-	padding: 1em;
-
-	border: 2px solid rebeccapurple;
-
 	width: 20%;
 	height: 30%;
+
+	margin: 1em;
+
+	border: 2px solid rebeccapurple;
+	border-radius: 1em;
 }
