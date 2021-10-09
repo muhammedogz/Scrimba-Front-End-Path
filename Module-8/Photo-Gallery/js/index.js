@@ -1,25 +1,50 @@
 const bodyEl = document.querySelector("body");
 
-const photoCount = 15; // max 100
+
+
+
+const photoCount = 20; // max 100
 
 async function getPhotos(count) {
     const res = await fetch(`https://picsum.photos/v2/list?page=2&limit=${count}`);
     const photos = await res.json();
-    const p = photos[0].download_url;
-    console.log(p.slice(0,p.length - 10));
 
-    let html = "<div class='photos'>";
+    const outerDiv = document.createElement("div");
+    outerDiv.classList.add("photos");
+
+    let images = "";
 
     for (const photo of photos) {
         let url = photo.download_url;
+        
+        // remove last part of url and att new dimensions
         url = url.slice(0, url.length - 10) + "/200/300";
         
-        html += `<img class="photo" src="${url}">`;
+        images += `<img class="photo" src="${url}">`;
     
     }
-    html += "</div>";
-    bodyEl.innerHTML += html;
-    
+    outerDiv.innerHTML = images;
+    bodyEl.appendChild(outerDiv);
 }
 
-getPhotos(photoCount);
+getPhotos(photoCount)
+    .then(clickImage);
+
+function clickImage() {
+    const images = document.querySelectorAll(".photo");
+    
+    for (const image of images) {
+        image.addEventListener("click", (event) => {
+            console.log("I click", event);
+
+            for (const img of images) {
+                if (img.classList.contains("onscreen")) 
+                    img.classList.remove("onscreen");
+            }
+
+            event.target.classList.add("onscreen");
+            
+        });
+    }
+}
+

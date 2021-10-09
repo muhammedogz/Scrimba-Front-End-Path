@@ -11,16 +11,24 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-
-	border: 5px solid red;
 }
 
 .photo {
-	width: 20%;
-	height: 30%;
+	width: 15%;
+	height: auto;
 
 	margin: 1em;
+	order: 99;
 
 	border: 2px solid rebeccapurple;
 	border-radius: 1em;
+}
+
+.onscreen {
+	width: auto;
+	height: 60vh;
+
+	margin: 1em 100vw;
+
+	order: 0;
 }
