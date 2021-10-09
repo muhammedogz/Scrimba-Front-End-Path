@@ -31,18 +31,31 @@ getPhotos(photoCount)
     .then(clickImage);
 
 function clickImage() {
+    const parentDiv = document.querySelector(".photos");
     const images = document.querySelectorAll(".photo");
+
     
     for (const image of images) {
         image.addEventListener("click", (event) => {
-            console.log("I click", event);
-
-            for (const img of images) {
-                if (img.classList.contains("onscreen")) 
-                    img.classList.remove("onscreen");
-            }
-
+            // add required class to make bigger
             event.target.classList.add("onscreen");
+
+            const tempDiv = document.createElement("div");
+            tempDiv.classList.add("outerImageDiv");
+            parentDiv.replaceChild(tempDiv,event.target);
+            tempDiv.appendChild(event.target);
+
+            tempDiv.addEventListener("click", () => {
+                tempDiv.removeChild(event.target);
+                parentDiv.replaceChild(event.target, tempDiv);
+
+                            
+                for (const img of images) {
+                    if (img.classList.contains("onscreen")) 
+                    img.classList.remove("onscreen");
+                }
+            });
+
             
         });
     }

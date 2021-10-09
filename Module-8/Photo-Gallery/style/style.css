@@ -18,17 +18,28 @@ body {
 	height: auto;
 
 	margin: 1em;
-	order: 99;
 
 	border: 2px solid rebeccapurple;
 	border-radius: 1em;
 }
 
+.outerImageDiv {
+	position: fixed;
+	height: 100%;
+	inset: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgba(0, 0, 0, 0.664);
+}
+
 .onscreen {
+	height: 90%;
 	width: auto;
-	height: 60vh;
 
-	margin: 1em 100vw;
+	margin: auto;
 
-	order: 0;
+	border: 1px solid white;
 }
