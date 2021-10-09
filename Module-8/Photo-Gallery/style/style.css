@@ -14,7 +14,7 @@ body {
 }
 
 .photo {
-	width: 15%;
+	width: 18%;
 	height: auto;
 
 	margin: 1em;
@@ -35,11 +35,23 @@ body {
 }
 
 .onscreen {
-	height: 90%;
-	width: auto;
+	height: auto;
+	width: 30vw;
 
 	margin: auto;
 
 	border: 1px solid white;
 	border-radius: 0;
+}
+
+@media (max-width: 980px) {
+	.onscreen {
+		width: 65vw;
+	}
+}
+
+@media (max-width: 680px) {
+	.onscreen {
+		width: 85vw;
+	}
 }
