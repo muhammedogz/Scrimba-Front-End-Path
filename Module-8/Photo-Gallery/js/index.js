@@ -15,7 +15,7 @@ async function getPhotos(count) {
         let url = photo.download_url;
         
         // remove last part of url and att new dimensions
-        url = url.slice(0, url.length - 10) + "/200/300";
+        url = url.slice(0, url.length - 10) + "/600/800";
         
         images += `<img class="photo" src="${url}">`;
     
