@@ -147,4 +147,3 @@ Flexbox challenges with APIs.
 - Photo Gallery -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Photo-Gallery/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Photo-Gallery)
-
