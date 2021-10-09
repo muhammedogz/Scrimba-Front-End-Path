@@ -20,7 +20,7 @@ body {
 	margin: 1em;
 
 	border: 2px solid rebeccapurple;
-	border-radius: 1em;
+	border-radius: 2em;
 }
 
 .outerImageDiv {
@@ -29,8 +29,6 @@ body {
 	inset: 0;
 
 	display: flex;
-	justify-content: center;
-	align-items: center;
 
 	background-color: rgba(0, 0, 0, 0.664);
 }
@@ -42,4 +40,5 @@ body {
 	margin: auto;
 
 	border: 1px solid white;
+	border-radius: 0;
 }

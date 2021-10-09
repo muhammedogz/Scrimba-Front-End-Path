@@ -1,8 +1,5 @@
 const bodyEl = document.querySelector("body");
 
-
-
-
 const photoCount = 20; // max 100
 
 async function getPhotos(count) {
@@ -34,29 +31,30 @@ function clickImage() {
     const parentDiv = document.querySelector(".photos");
     const images = document.querySelectorAll(".photo");
 
-    
     for (const image of images) {
         image.addEventListener("click", (event) => {
             // add required class to make bigger
             event.target.classList.add("onscreen");
 
+            // create an outer div to keep image in fixed
             const tempDiv = document.createElement("div");
             tempDiv.classList.add("outerImageDiv");
+            // change desired image and tempDiv parent
             parentDiv.replaceChild(tempDiv,event.target);
             tempDiv.appendChild(event.target);
 
+            // if tempDiv clicked
+            // remove div and image from parent and make it fresh
             tempDiv.addEventListener("click", () => {
                 tempDiv.removeChild(event.target);
                 parentDiv.replaceChild(event.target, tempDiv);
-
-                            
+          
                 for (const img of images) {
                     if (img.classList.contains("onscreen")) 
                     img.classList.remove("onscreen");
                 }
             });
 
-            
         });
     }
 }
