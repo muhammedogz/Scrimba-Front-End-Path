@@ -3,14 +3,32 @@
 }
 
 body {
-	background-color: #418bbd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	overflow: hidden;
+	background-color: #6c41bd;
 	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.container {
+	width: 75%;
+	height: 65%;
+
+	margin: auto;
+	padding: 1em;
+
+	background-color: #5fc0b8;
+
+	border-radius: 2em;
 }
 
 .user-profile {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	gap: 2em;
 	height: 100vh;
 }
 

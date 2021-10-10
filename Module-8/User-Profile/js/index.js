@@ -1,4 +1,4 @@
-
+const containerEl = document.querySelector(".container");
 
 async function getUser() {
     let response = await fetch("https://jsonplaceholder.typicode.com/users/3");
@@ -7,7 +7,7 @@ async function getUser() {
 }
 
 function displayUser(user) {
-    document.body.innerHTML = `<div class="user-profile">
+    containerEl.innerHTML = `<div class="user-profile">
         <div class="user-profile-header">
             <div>${user.name}</div>
             <div>@${user.username}</div>
