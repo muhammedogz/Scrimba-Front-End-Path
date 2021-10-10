@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #418bbd;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.user-profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+.user-profile-header {
+	display: flex;
+	justify-content: space-between;
+	background-color: aquamarine;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+}
+
+.user-profile-company {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: lightgoldenrodyellow;
+	margin: 0.3rem;
+	border: 0.1rem solid black;
+	border-radius: 1rem;
+}
+
+.user-profile-company div {
+	margin: 0.3rem;
+	font-size: 1.1rem;
+}
+
+.user-profile-contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.2rem;
+	background-color: lightgreen;
+	border: 0.1rem solid black;
+}
+
+.user-profile-contact div {
+	margin: 0.3rem;
+}
+
+.user-profile-address {
+	display: flex;
+	font-size: 1.1rem;
+	background-color: aquamarine;
+	padding: 0.3rem;
+}
