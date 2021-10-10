@@ -150,3 +150,8 @@ Flexbox challenges with APIs.
 - Online Users -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Online-Users/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Online-Users)
+- User Profile -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/User-Profile/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/User-Profile)
+
+Grid challenges with APIs.
