@@ -2,11 +2,32 @@
 	box-sizing: border-box;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+
+	text-align: center;
+}
+
 p {
 	margin: 0;
 }
 
+/* header */
+
+header {
+	padding: 4em;
+	background-color: rgba(255, 0, 212, 0.575);
+	border: 1px solid blue;
+}
+
 /* user layout */
+
+#user-section {
+	overflow-y: auto;
+	height: 20vh;
+	width: 50%;
+}
 
 .online-users {
 	border: 1px solid blue;
@@ -18,10 +39,7 @@ p {
 	gap: 0.2em;
 
 	background-color: aqua;
-	border: 1px solid red;
-}
-
-.user-name {
+	border: 1px solid black;
 }
 
 .online-status {
@@ -29,4 +47,25 @@ p {
 	height: 0.7rem;
 	background-color: green;
 	border-radius: 2em;
+}
+
+/* main-aside */
+
+/* main */
+
+main {
+	padding-inline: 4em;
+}
+
+.main-aside {
+	background-color: gray;
+	width: 100%;
+	display: flex;
+}
+
+/* footer */
+
+footer {
+	padding: 4em;
+	background-color: brown;
 }

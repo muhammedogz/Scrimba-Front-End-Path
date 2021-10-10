@@ -1,4 +1,4 @@
-const bodyEl = document.querySelector("body");
+const userSectionEl = document.getElementById("user-section");
 
 
 async function getUsers() {
@@ -21,5 +21,5 @@ function renderUsers(users) {
     userHtml += "</div>";
     console.log(userHtml);
 
-    bodyEl.innerHTML += userHtml;
+    userSectionEl.innerHTML += userHtml;
 }
