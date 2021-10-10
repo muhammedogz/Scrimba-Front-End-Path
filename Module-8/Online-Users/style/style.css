@@ -2,4 +2,31 @@
 	box-sizing: border-box;
 }
 
+p {
+	margin: 0;
+}
+
 /* user layout */
+
+.online-users {
+	border: 1px solid blue;
+}
+
+.online-user {
+	display: flex;
+	align-items: center;
+	gap: 0.2em;
+
+	background-color: aqua;
+	border: 1px solid red;
+}
+
+.user-name {
+}
+
+.online-status {
+	width: 0.7rem;
+	height: 0.7rem;
+	background-color: green;
+	border-radius: 2em;
+}
