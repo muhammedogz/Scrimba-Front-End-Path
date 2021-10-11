@@ -4,7 +4,7 @@ const categoryArr = () => {
     const arr = [];
     while (true) {
         const random = Math.floor(Math.random() * 24) + 9;
-        if (!arr.includes(random)) 
+        if (!arr.includes(random) && random != 13 && random != 30) 
             arr.push(random);
         if (arr.length == 4) break;
     }
