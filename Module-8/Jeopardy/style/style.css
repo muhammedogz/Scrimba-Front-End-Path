@@ -15,11 +15,15 @@ p {
 }
 
 .question::before {
-	content: "200";
 	font-size: 16px;
 	margin: 0;
 
 	display: block;
+}
+
+.q100::after {
+	content: "100";
+	font-size: 1rem;
 }
 
 .focused-question {
