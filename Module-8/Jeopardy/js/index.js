@@ -34,7 +34,19 @@ function getQuestions() {
 function renderQuestions(questions) {
     if (questions.length != 4) return;
     console.log('render part questions :>> ', questions);
-    
+
+    let questionHTML = "";
+
+    for (const category of questions) {
+        questionHTML += `<div class="category">` + category[0].category;
+        
+        for (const question of category) {
+            questionHTML += `<p class="category">` + question.question + `</p>`;
+        }
+        questionHTML += "</div>";
+    }
+
+    bodyEl.innerHTML = questionHTML; 
 }
 
 getQuestions();
