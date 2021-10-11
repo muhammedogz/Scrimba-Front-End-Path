@@ -38,12 +38,13 @@ function renderQuestions(questions) {
     let questionHTML = "";
 
     for (const category of questions) {
-        questionHTML += `<div class="category">` + category[0].category;
+        questionHTML += `<div class="question-block"><p class="category">` + category[0].category + `</p>`;
         
         for (const question of category) {
-            questionHTML += `<p class="category">` + question.question + `</p>`;
+            questionHTML += `<p class="question">` + question.question + `</p>`;
         }
         questionHTML += "</div>";
+        console.log('questionHTML :>> ', questionHTML);
     }
 
     bodyEl.innerHTML = questionHTML; 

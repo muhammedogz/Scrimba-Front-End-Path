@@ -1,0 +1,16 @@
+* {
+	box-sizing: border-box;
+}
+
+.question-block {
+	border: 2px solid blue;
+}
+
+.question {
+	visibility: hidden;
+}
+
+.question::before {
+	content: "200";
+	display: block;
+}
