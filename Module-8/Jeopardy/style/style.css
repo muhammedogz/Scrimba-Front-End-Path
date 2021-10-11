@@ -2,15 +2,36 @@
 	box-sizing: border-box;
 }
 
+p {
+	margin: 0;
+}
+
 .question-block {
 	border: 2px solid blue;
 }
 
 .question {
-	visibility: hidden;
+	font-size: 0;
 }
 
 .question::before {
 	content: "200";
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
 	display: block;
+}
+
+.focused-question {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+
+	margin: auto;
+	padding: 50% 0;
+	text-align: center;
+	background-color: blue;
+	inset: 0;
+	color: white;
+	font-size: 4rem !important;
 }
