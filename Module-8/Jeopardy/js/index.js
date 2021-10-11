@@ -19,33 +19,24 @@ async function getCategories(categoryId) {
     return data.results;
 }
 
-async function getQuestions() {
+function getQuestions() {
     const questionsArr = [];
     const randomArr = categoryArr();
     console.log('randomArr :>> ', randomArr);
     randomArr.forEach(rand => {
         getCategories(rand).then(questions => {
-            console.log(questions);
             questionsArr.push(questions);
+            renderQuestions(questionsArr);
         });
-    }); 
-    console.log('questionsArr :>> ', questionsArr);
-    return questionsArr;
+    });
 }
 
-async function renderQuestions() {
-    getQuestions().then(categories => {
-        console.log('categories :>> ', categories);
-        let questionHTML = "";
-        console.log('categories.length :>> ', categories.length);
-        categories.forEach(questions => {
-                console.log('questions :>> ', questions);
-        });
-        for (let i = 0; i < 4; i++) console.log('ili :>> ', categories[i]);
-    });
+function renderQuestions(questions) {
+    if (questions.length != 4) return;
+    console.log('render part questions :>> ', questions);
     
 }
 
-renderQuestions();
+getQuestions();
 
 
