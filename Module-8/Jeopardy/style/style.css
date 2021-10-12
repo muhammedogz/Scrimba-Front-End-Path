@@ -4,8 +4,7 @@
 
 body {
 	display: grid;
-	grid-template-columns: repeat(4, 25%);
-	grid-template-rows: repeat(5, 20%);
+	grid-template-columns: repeat(4, 25vw);
 
 	height: 100vh;
 }
@@ -15,8 +14,7 @@ p {
 }
 
 .question-block {
-	display: flex;
-	flex-direction: column;
+	border: 1px solid yellowgreen;
 }
 
 .question-block * {
@@ -24,9 +22,15 @@ p {
 }
 
 .category {
-	padding: 1em;
+	padding: 0.3em;
 	word-wrap: break-word;
 	font-size: max(1rem, min(1rem + 3vw, 3.5rem));
+}
+
+.questions {
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(4, 20%);
 }
 
 .question {
@@ -72,7 +76,7 @@ p {
 
 .text-helper::after {
 	display: block;
-	padding-block: 0;
+	padding: 0.3em;
 
 	text-align: center;
 	font-size: max(1.5rem, min(1rem + 3vw, 5rem));
