@@ -7,6 +7,10 @@ body {
 	grid-template-columns: repeat(4, 25vw);
 
 	height: 100vh;
+
+	overflow: hidden;
+
+	color: aliceblue;
 }
 
 p {
@@ -14,24 +18,25 @@ p {
 }
 
 .question-block {
-	border: 1px solid yellowgreen;
+	background-color: rgba(102, 51, 153, 0.555);
 }
 
 .question-block * {
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 .category {
-	height: 30%;
+	height: 35%;
 	padding: 0.3em;
 	word-wrap: break-word;
-	font-size: max(1rem, min(1rem + 3vw, 3.5rem));
+	font-size: max(1rem, min(1rem + 3vw, 3rem));
 }
 
 .questions {
+	background-color: cadetblue;
 	height: 100%;
 	display: grid;
-	grid-template-rows: repeat(4, 20%);
+	grid-template-rows: repeat(4, 17%);
 }
 
 .question {
@@ -66,13 +71,14 @@ p {
 	width: 100vw;
 	height: 100vh;
 
-	padding-top: 30vh 2em€;
+	padding-top: 13vh;
+	padding-inline: 1em;
 
 	text-align: center;
 	background-color: rgb(41, 149, 117);
 	inset: 0;
 	color: white;
-	font-size: 4rem !important;
+	font-size: clamp(1.2rem, 1.5rem + 4vw, 3.5rem);
 }
 
 .text-helper::after {
