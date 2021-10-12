@@ -2,12 +2,31 @@
 	box-sizing: border-box;
 }
 
+body {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: repeat(5, 20%);
+
+	height: 100vh;
+}
+
 p {
 	margin: 0;
 }
 
 .question-block {
-	border: 2px solid blue;
+	display: flex;
+	flex-direction: column;
+}
+
+.question-block * {
+	border: 2px solid black;
+}
+
+.category {
+	padding: 1em;
+	word-wrap: break-word;
+	font-size: max(1rem, min(1rem + 3vw, 3.5rem));
 }
 
 .question {
@@ -23,22 +42,18 @@ p {
 
 .q100::after {
 	content: "100$";
-	font-size: 1rem;
 }
 
 .q200::after {
 	content: "200$";
-	font-size: 1rem;
 }
 
 .q300::after {
 	content: "300$";
-	font-size: 1rem;
 }
 
 .q400::after {
 	content: "400$";
-	font-size: 1rem;
 }
 
 .focused-question {
@@ -53,4 +68,12 @@ p {
 	inset: 0;
 	color: white;
 	font-size: 4rem !important;
+}
+
+.text-helper::after {
+	display: block;
+	padding-block: 0;
+
+	text-align: center;
+	font-size: max(1.5rem, min(1rem + 3vw, 5rem));
 }
