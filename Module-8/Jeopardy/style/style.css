@@ -22,22 +22,22 @@ p {
 } */
 
 .q100::after {
-	content: "100";
+	content: "100$";
 	font-size: 1rem;
 }
 
 .q200::after {
-	content: "200";
+	content: "200$";
 	font-size: 1rem;
 }
 
 .q300::after {
-	content: "300";
+	content: "300$";
 	font-size: 1rem;
 }
 
 .q400::after {
-	content: "400";
+	content: "400$";
 	font-size: 1rem;
 }
 

@@ -36,15 +36,19 @@ function renderQuestions(questions) {
     console.log('render part questions :>> ', questions);
 
     let questionHTML = "";
+    
 
     for (const category of questions) {
         questionHTML += `<div class="question-block"><p class="category">` + category[0].category + `</p>`;
+        let qValue = 1;
         
         for (const question of category) {
-            questionHTML += `<p class="question">` + question.question + `</p>`;
+            questionHTML += `<p class="question q${qValue}00">` + question.question + `</p>`;
+            qValue++;
         }
         questionHTML += "</div>";
         console.log('questionHTML :>> ', questionHTML);
+        
     }
 
     bodyEl.innerHTML = questionHTML; 
