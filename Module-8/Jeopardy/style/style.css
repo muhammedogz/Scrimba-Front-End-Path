@@ -14,15 +14,30 @@ p {
 	font-size: 0;
 }
 
-.question::before {
+/* .question::before {
 	font-size: 16px;
 	margin: 0;
 
 	display: block;
-}
+} */
 
 .q100::after {
 	content: "100";
+	font-size: 1rem;
+}
+
+.q200::after {
+	content: "200";
+	font-size: 1rem;
+}
+
+.q300::after {
+	content: "300";
+	font-size: 1rem;
+}
+
+.q400::after {
+	content: "400";
 	font-size: 1rem;
 }
 
@@ -32,6 +47,7 @@ p {
 	height: 100vh;
 
 	padding: 50% 0;
+
 	text-align: center;
 	background-color: blue;
 	inset: 0;
