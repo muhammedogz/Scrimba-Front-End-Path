@@ -39,14 +39,14 @@ function renderQuestions(questions) {
     
 
     for (const category of questions) {
-        questionHTML += `<div class="question-block"><p class="category">` + category[0].category + `</p>`;
+        questionHTML += `<div class="question-block"><p class="category">` + category[0].category + `</p><div class="questions">`;
         let qValue = 1;
         
         for (const question of category) {
             questionHTML += `<p class="question q${qValue}00 text-helper">` + question.question + `</p>`;
             qValue++;
         }
-        questionHTML += "</div>";
+        questionHTML += "</div></div>";
         
     }
 
