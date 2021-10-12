@@ -47,11 +47,28 @@ function renderQuestions(questions) {
             qValue++;
         }
         questionHTML += "</div>";
-        console.log('questionHTML :>> ', questionHTML);
         
     }
 
     bodyEl.innerHTML = questionHTML; 
+
+
+    showQuestions();
+}
+
+function showQuestions() {
+    const questionsEl = document.querySelectorAll(".question");
+    
+    questionsEl.forEach(question => {
+        question.addEventListener("click", () => {
+            if (!question.classList.contains("focused-question"))
+            {
+                question.classList.add("focused-question");
+            } else {
+                question.classList.remove("focused-question");
+            }
+        });
+    });
 }
 
 getQuestions();
