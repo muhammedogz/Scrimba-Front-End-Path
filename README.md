@@ -159,3 +159,6 @@ Grid challenges with APIs.
 - Jeopardy (True or False Game) -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Jeopardy/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Jeopardy)
+- Pokedex -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Pokedex/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Pokedex)
