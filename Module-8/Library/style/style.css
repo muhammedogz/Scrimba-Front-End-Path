@@ -1,3 +1,58 @@
 * {
 	box-sizing: border-box;
 }
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: lightyellow;
+	padding: 1rem;
+}
+
+.my-library {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(3, calc(100% / 3));
+}
+
+.my-book {
+	display: grid;
+	grid-template-columns: 1rem 7rem;
+	grid-template-areas:
+		"spine cover"
+		"footer footer";
+}
+
+.my-book div {
+	border: 0.1rem solid black;
+}
+
+.my-book-cover {
+	grid-area: cover;
+	height: 7rem;
+	background-color: lightgreen;
+	text-align: center;
+	padding: 1rem;
+}
+
+.my-book-spine {
+	grid-area: spine;
+	background-color: #4a4238;
+	border-top-left-radius: 0.3rem;
+}
+
+.my-book-footer {
+	grid-area: footer;
+	padding: 0.2rem;
+	background-color: lightgray;
+	border-bottom-left-radius: 0.3rem;
+}
+
+.my-book:nth-of-type(even) .my-book-cover {
+	background-color: lightblue;
+}
+
+.my-book:nth-of-type(even) .my-book-spine {
+	background-color: #e1b07e;
+}
