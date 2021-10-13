@@ -165,3 +165,7 @@ Grid challenges with APIs.
 - Library -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Library/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Library)
+
+### Module 9 - Learn UI Design
+
+This module teaches UI Design fundamentals and how to apply those with CSS.
