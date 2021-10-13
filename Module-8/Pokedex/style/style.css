@@ -31,7 +31,7 @@ body {
 }
 
 .pokemon-img {
-	background-color: blue;
+	background-color: rgb(158, 158, 170);
 	grid-column: span 3;
 }
 
@@ -39,14 +39,16 @@ body {
 	grid-column: span 5;
 	background-color: lightyellow;
 	font-size: 1.3rem;
+	text-transform: uppercase;
 }
 
 .pokemon-type {
 	grid-column: span 5;
+	background-color: lightsalmon;
 	font-size: 1.3rem;
 }
 
-.a-pokemon-stat {
+.pokemon-stat {
 	background-color: lightpink;
 	grid-column: span 4;
 }
