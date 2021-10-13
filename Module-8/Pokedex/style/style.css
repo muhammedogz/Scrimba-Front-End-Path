@@ -11,6 +11,8 @@ img {
 }
 
 .pokemon {
+	max-width: 800px;
+	margin: auto;
 	padding: 0.5em 1em;
 
 	display: grid;
@@ -55,4 +57,31 @@ img {
 .pokemon-stat {
 	background-color: lightpink;
 	grid-column: span 4;
+}
+
+/* button */
+
+.buttons {
+	width: 25%;
+	margin: auto;
+	padding: 1em;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 0.3em;
+}
+
+button {
+	padding: 0.25em 0.5em;
+	border: none;
+	background: none;
+
+	border-radius: 1em;
+	background-color: cadetblue;
+
+	cursor: pointer;
+}
+
+button:disabled {
+	cursor: not-allowed;
 }
