@@ -1,7 +1,7 @@
-const bodyEl = document.querySelector("body");
+const mainEl = document.querySelector("main");
 
-async function getAllPokemons() {
-    const res = await fetch("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=200");
+async function getAllPokemons(offset) {
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=20`);
     const data = await res.json();
     return data.results;
 }
@@ -17,7 +17,7 @@ getAllPokemons()
         allPokemons.forEach(poke => {
             getPokemon(poke.url)
                 .then(pokemon => {
-                    bodyEl.innerHTML += `
+                    mainEl.innerHTML += `
                     <div class="pokemon">
                         <div class="pokemon-id">${pokemon.id}</div>
                         <img src=" ${pokemon.sprites.front_default}" class="pokemon-img"> 
