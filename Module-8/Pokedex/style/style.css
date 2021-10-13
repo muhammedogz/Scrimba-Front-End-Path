@@ -6,6 +6,10 @@ body {
 	background-color: #90ee90;
 }
 
+img {
+	width: 100%;
+}
+
 .pokemon {
 	padding: 0.5em 1em;
 
