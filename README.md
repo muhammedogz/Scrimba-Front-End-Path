@@ -162,3 +162,6 @@ Grid challenges with APIs.
 - Pokedex -
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Pokedex/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Pokedex)
+- Library -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Library/index.html) -
+  [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Library)
