@@ -26,10 +26,14 @@ p {
 }
 
 .category {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	height: 35%;
 	padding: 0.3em;
 	word-wrap: break-word;
-	font-size: max(1rem, min(1rem + 3vw, 3rem));
+	font-size: max(0.5rem, min(0.5rem + 2vw, 2rem));
 }
 
 .questions {
@@ -40,6 +44,11 @@ p {
 }
 
 .question {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	font-size: 0;
 }
 
