@@ -1,4 +1,8 @@
 const mainEl = document.querySelector("main");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+ 
+let offsetValue = 0;
 
 async function getAllPokemons(offset) {
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=20`);
@@ -12,7 +16,8 @@ async function getPokemon(url) {
     return data;
 }
 
-getAllPokemons()
+function renderProcess(offset) {
+    getAllPokemons(offset)
     .then(allPokemons => {
         allPokemons.forEach(poke => {
             getPokemon(poke.url)
@@ -23,7 +28,8 @@ getAllPokemons()
                         <img src=" ${pokemon.sprites.front_default}" class="pokemon-img"> 
                         
                         <div class="pokemon-name">${pokemon.name}</div>
-                        <div class="pokemon-type">${pokemon.types[0].type.name + "/" + pokemon.types[1].type.name}</div>
+                        <div class="pokemon-type">
+                        ${pokemon.types[0].type.name}</div>
                         
                         
                         <div class="pokemon-stat">HP: ${pokemon.stats[0].base_stat}</div>
@@ -35,3 +41,22 @@ getAllPokemons()
                 });
         });
     });
+}
+
+renderProcess(offsetValue);
+
+nextBtn.addEventListener("click", () => {
+    offsetValue += 20;
+    mainEl.innerHTML = "";
+    renderProcess(offsetValue);
+    if (offsetValue > 0)
+        prevBtn.disabled = false;
+});
+
+prevBtn.addEventListener("click", () => {
+    offsetValue -= 20;
+    mainEl.innerHTML = "";
+    renderProcess(offsetValue);
+    if (offsetValue == 0)
+        prevBtn.disabled = true;
+});
