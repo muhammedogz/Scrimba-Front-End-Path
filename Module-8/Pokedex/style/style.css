@@ -1,3 +1,52 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	background-color: #90ee90;
+}
+
+.pokemon {
+	padding: 0.5em 1em;
+
+	display: grid;
+	grid-template-columns: repeat(16, calc(100% / 16));
+}
+
+.pokemon * {
+	border: 0.1rem solid black;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	padding: 0.3rem;
+}
+
+.pokemon-id {
+	background-color: lightblue;
+	grid-column: span 3;
+	font-size: 1.3rem;
+}
+
+.pokemon-img {
+	background-color: blue;
+	grid-column: span 3;
+}
+
+.pokemon-name {
+	grid-column: span 5;
+	background-color: lightyellow;
+	font-size: 1.3rem;
+}
+
+.pokemon-type {
+	grid-column: span 5;
+	font-size: 1.3rem;
+}
+
+.a-pokemon-stat {
+	background-color: lightpink;
+	grid-column: span 4;
+}
