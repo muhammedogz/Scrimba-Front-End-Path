@@ -128,7 +128,7 @@ This module teaches APIs with showing different APIs and introduces Asynchronous
 
 ### Module 8 - Building apps with Flexbox and Grid
 
-This module aims to learn flexbox, grid and adapt those designs to web projects.\
+This module teaches flexbox and grid. How to adapt those designs to web projects.\
 Also part of the this [repo](https://github.com/muhammedogz/Scrimba-Responsive-Design).
 
 - Card Component -
