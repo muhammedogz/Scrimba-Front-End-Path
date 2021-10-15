@@ -39,6 +39,7 @@ function clickImage() {
             // create an outer div to keep image in fixed
             const tempDiv = document.createElement("div");
             tempDiv.classList.add("outerImageDiv");
+
             // change desired image and tempDiv parent
             parentDiv.replaceChild(tempDiv,event.target);
             tempDiv.appendChild(event.target);
@@ -58,4 +59,3 @@ function clickImage() {
         });
     }
 }
-
