@@ -2,6 +2,8 @@ const mainEl = document.querySelector("main");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
  
+// set offset value to 0
+// it will change when every next page clicked
 let offsetValue = 0;
 
 async function getAllPokemons(offset) {
