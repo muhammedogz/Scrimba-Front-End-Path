@@ -169,3 +169,7 @@ Grid challenges with APIs.
 ### Module 9 - Learn UI Design
 
 This module teaches UI Design fundamentals and how to apply those with CSS.
+
+### Module 11 - React Basics
+
+This module teaches react basics.
