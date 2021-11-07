@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "./Scrimba-Front-End-Path/Module-11/first_app/static/css/main.bab0b925.chunk.css",
+    "main.js": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/main.36f8e2d3.chunk.js",
+    "main.js.map": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/main.36f8e2d3.chunk.js.map",
+    "runtime-main.js": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/runtime-main.fd67137e.js",
+    "runtime-main.js.map": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/runtime-main.fd67137e.js.map",
+    "static/js/2.c0b7953d.chunk.js": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/2.c0b7953d.chunk.js",
+    "static/js/2.c0b7953d.chunk.js.map": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/2.c0b7953d.chunk.js.map",
+    "static/js/3.8f4fc5b8.chunk.js": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/3.8f4fc5b8.chunk.js",
+    "static/js/3.8f4fc5b8.chunk.js.map": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/3.8f4fc5b8.chunk.js.map",
+    "index.html": "./Scrimba-Front-End-Path/Module-11/first_app/index.html",
+    "static/css/main.bab0b925.chunk.css.map": "./Scrimba-Front-End-Path/Module-11/first_app/static/css/main.bab0b925.chunk.css.map",
+    "static/js/2.c0b7953d.chunk.js.LICENSE.txt": "./Scrimba-Front-End-Path/Module-11/first_app/static/js/2.c0b7953d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd67137e.js",
+    "static/js/2.c0b7953d.chunk.js",
+    "static/css/main.bab0b925.chunk.css",
+    "static/js/main.36f8e2d3.chunk.js"
+  ]
+}
