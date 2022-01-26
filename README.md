@@ -166,9 +166,24 @@ Grid challenges with APIs.
   [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-8/Library/index.html) -
   [Source Code](https://github.com/muhammedogz/Scrimba-Front-End-Path/tree/master/Module-8/Library)
 
+----
+
 ### Module 9 - Learn UI Design
 
-This module teaches UI Design fundamentals and how to apply those with CSS.
+This module teaches UI Design fundamentals and how to apply those with CSS. For better learning and gaining more UI design skills, I completed UI Design Bootcamp that has more modules than the one in front-end path.
+
+[UI Design Bootcamp](https://scrimba.com/learn/designbootcamp)
+
+This module covers those areas of UI Design: White Space | Color | Contrast | Scale | Alignment | Typography | Visual Hierarchy
+
+- Simple Layout -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-9/Simple-Layout/index.html) -
+  [Source Code](Module-9/Simple-Layout/index.html)
+- Responsive Layout -
+  [Live Demo](https://muhammedogz.github.io/Scrimba-Front-End-Path/Module-9/Responsive-Layout/index.html) -
+  [Source Code](Module-9/Responsive-Layout/index.html)
+
+----
 
 ### Module 11 - React Basics
 
