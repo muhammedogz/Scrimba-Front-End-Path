@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.wrapper {
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background-area {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+a.logo {
+    color: #C500FF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ nav ul {
+     display: flex;
+     margin-top: 1em;
+ }
+ 
+ nav li {
+     margin-right: .5em;
+ }
+ 
+ nav li a {
+     color: black;
+     font-weight: bold;
+     padding: .3em .7em;
+     background-color: #E6E6E6;
+     border-radius: 1em;
+ }
+ 
+ .hero-left {
+     text-align: center;
+ }
+ 
+ h1 {
+     font-size: 2.5em;
+     width: 80%;
+     margin: 1.5em auto 0;
+ }
+ 
+ .hero-left p {
+     font-size: 1.2em;
+     width: 80%;
+     margin: 1em auto;
+ }
+ 
+ a.cta-btn {
+     color: white;
+     background: #C500FF;
+     padding: .8em 1.5em;
+     border-radius: 2em;
+     font-weight: bold;
+     margin: 1em 0 3em;
+     display: inline-block;
+ }
+ 
+ ul.testimonials {
+     margin-top: 3em;
+ }
+ 
+ ul.testimonials li {
+     background: white;
+     padding: 2em;
+     margin-bottom: 1em;
+     text-align: center;
+     box-shadow: 10px 10px 18px 0px rgba(0,0,0,.09);
+ }
+ 
+ blockquote, blockquote p {
+     margin: 0;
+ }
+ footer {
+     font-weight: bold;
+     display: block;
+     margin-top: 1em;
+ }
+ blockquote p {
+     line-height: 1.4em;
+ }
+ 
+ @media (min-width: 390px) {
+     header {
+         display: flex;
+         justify-content: space-between;
+     }
+     nav ul {
+         margin-top: .2em;
+     }
+     nav ul li:nth-of-type(3) {
+         margin-right: 0;
+     }
+ }
+ 
+@media (min-width: 600px) {
+     
+     ul.testimonials {
+         display: grid;
+         grid-template-columns: repeat(2,auto);
+         grid-template-rows: repeat(2,auto);
+         grid-gap: 1em;
+     }
+     ul.testimonials li {
+         margin: 0;
+     }
+     
+     ul.testimonials li:nth-of-type(3) {
+         grid-area: 2 / 1 / 2 / 3;
+     }
+     
+     .background-area {
+         clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+     }
+     
+ }
+ 
+ @media (min-width: 850px) {
+     
+     .wrapper {
+         padding: 2em;
+     }
+     
+ }
+ 
+  @media (min-width: 1000px) {
+     
+     .hero-left {
+         text-align: left;
+         width: 30%;
+         margin-left: 4em;
+     }
+     
+     h1, .hero-left p {
+         width: 100%;
+     }
+     
+     .background-area {
+         top: 0;
+         right: 0;
+         width: 50%;
+         clip-path: none;
+     }
+     nav ul li a {
+         background: none;
+     }
+     h1 {
+         font-size: 3rem;
+     }
+     ul.testimonials {
+         display: flex;
+     }
+     ul.testimonials  li {
+         margin-right: 1em;
+     }
+     ul.testimonials li:nth-of-type(3) {
+         margin-right: 0;
+     }
+     
+ }
+ 
+ /*
+
+- White Space
+- Color 
+- Contrast 
+- Scale
+- Alignment
+- Typography
+- Visual Hierarchy
+
+*/
+
+/* For the width display, ignore this */
+
+.width-container {
+    display: none;
+}
+
+.display-width {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #E6E6E6;
+    padding: .3em;
+    font-size: .85em;
+}
